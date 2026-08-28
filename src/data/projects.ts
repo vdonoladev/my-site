@@ -133,8 +133,8 @@ export const projects: Project[] = [
       },
     ],
     links: {
-      demo: 'https://netocellassistencia.netlify.app/',
-      code: 'https://github.com/Victormoroo/Neto_Cell_Assistencia_Tecnica',
+      demo: 'https://netocell-vdonoladev.vercel.app/',
+      code: 'https://github.com/vdonoladev/neto-cell',
     },
   },
   {

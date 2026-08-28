@@ -48,7 +48,7 @@ export function Hero() {
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-10 bg-border-strong" />
               <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-                ReactJS · NodeJS · Spring · Docker · PostgreSQL
+                ReactJS · NodeJS · Astro · Docker · PostgreSQL
               </span>
             </div>
 
@@ -306,7 +306,7 @@ const codeLines: ReadonlyArray<CodeLine> = [
     { kind: 'plain',   text: ', ' },
     { kind: 'string',  text: '"NodeJS"' },
     { kind: 'plain',   text: ', ' },
-    { kind: 'string',  text: '"Spring"' },
+    { kind: 'string',  text: '"Astro"' },
     { kind: 'plain',   text: ',' },
   ]},
   { gutter: '', tokens: [

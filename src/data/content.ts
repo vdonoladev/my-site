@@ -10,7 +10,7 @@ export const links = {
   linkedin: 'https://www.linkedin.com/in/vdonoladev/',
   email: 'contato@vdonoladev.com.br',
   cv: '/vdonoladev-cv.pdf',
-  contactForm: 'https://formspree.io/f/mojrzovl',
+  contactForm: 'https://formspree.io/f/mljeevqg',
 };
 
 export const nav = {
@@ -188,7 +188,7 @@ export const content = {
             description:
               'Software interno para controle de patrimônio e estoque da empresa. ReactJS + Vite no web, React Native no mobile e backend em Java + Spring com banco PostgreSQL.',
           },
-          stack: ['React Native', 'ReactJS', 'TypeScript', 'Vite', 'Java', 'Spring', 'PostgreSQL', 'PowerShell', 'Mikrotik', 'RouterOS'],
+          stack: ['React Native', 'ReactJS', 'TypeScript', 'Vite', 'PostgreSQL', 'PowerShell', 'Mikrotik', 'RouterOS'],
         },
         {
           chapter: 'Mai 2023 - Out 2023',
