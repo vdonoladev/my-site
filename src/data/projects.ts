@@ -36,7 +36,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: 'link-in-bio',
-    kind: 'frontend',
+    kind: 'fullstack',
     name: 'Link in Bio',
     type: { pt: 'Landing Page · Link in Bio', en: 'Landing Page · Link in Bio' },
     description: {
