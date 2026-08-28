@@ -1,0 +1,19 @@
+{
+  "name": "Victor Donola Ferreira · Full-Stack Developer",
+  "short_name": "Victor Donola",
+  "description": "Portfólio de Victor Donola Ferreira - Full-Stack Developer.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0e12",
+  "theme_color": "#0a0e12",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ]
+}

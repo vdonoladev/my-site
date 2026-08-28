@@ -1,0 +1,90 @@
+@import '@fontsource-variable/geist/index.css';
+@import '@fontsource-variable/geist-mono/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light - cool blueprint canvas, vivid cyan accent */
+    --background: 226 231 237;
+    --foreground: 12 17 23;
+    --muted: 214 220 226;
+    --muted-foreground: 79 91 105;
+    --surface: 240 243 247;
+    --surface-elevated: 250 251 253;
+    --border: 198 207 215;
+    --border-strong: 156 168 180;
+    --accent: 8 145 178;             /* cyan-600 - vivid petrol */
+    --accent-foreground: 250 251 253;
+    --secondary: 70 81 95;
+  }
+
+  .dark {
+    /* Dark - deep cool slate, off-white ink, neon cyan accent */
+    --background: 10 14 18;
+    --foreground: 231 238 244;
+    --muted: 22 29 36;
+    --muted-foreground: 138 150 164;
+    --surface: 16 21 27;
+    --surface-elevated: 22 29 36;
+    --border: 29 38 47;
+    --border-strong: 42 55 68;
+    --accent: 34 211 238;            /* cyan-400 - neon petrol */
+    --accent-foreground: 10 14 18;
+    --secondary: 125 140 155;
+  }
+
+  * {
+    border-color: rgb(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: 'cv11', 'ss01', 'ss03';
+  }
+
+  ::selection {
+    background-color: rgb(var(--accent) / 0.25);
+    color: rgb(var(--foreground));
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-background;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .container-edge {
+    @apply mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-12;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Hairline grid background for hero/visual blocks */
+  .grid-hairlines {
+    background-image:
+      linear-gradient(to right, rgb(var(--border) / 0.7) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(var(--border) / 0.7) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+}

@@ -1,0 +1,38 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  darkMode: 'class',
+  content: ['./index.html', './src/**/*.{ts,tsx}'],
+  theme: {
+    container: {
+      center: true,
+      padding: { DEFAULT: '1.25rem', sm: '1.5rem', lg: '2rem' },
+      screens: { '2xl': '1280px' },
+    },
+    extend: {
+      fontFamily: {
+        sans: ['"Geist Variable"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['"Geist Mono Variable"', 'ui-monospace', 'monospace'],
+      },
+      colors: {
+        background: 'rgb(var(--background) / <alpha-value>)',
+        foreground: 'rgb(var(--foreground) / <alpha-value>)',
+        muted: 'rgb(var(--muted) / <alpha-value>)',
+        'muted-foreground': 'rgb(var(--muted-foreground) / <alpha-value>)',
+        surface: 'rgb(var(--surface) / <alpha-value>)',
+        'surface-elevated': 'rgb(var(--surface-elevated) / <alpha-value>)',
+        border: 'rgb(var(--border) / <alpha-value>)',
+        'border-strong': 'rgb(var(--border-strong) / <alpha-value>)',
+        accent: 'rgb(var(--accent) / <alpha-value>)',
+        'accent-foreground': 'rgb(var(--accent-foreground) / <alpha-value>)',
+        secondary: 'rgb(var(--secondary) / <alpha-value>)',
+      },
+      letterSpacing: {
+        display: '-0.035em',
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
