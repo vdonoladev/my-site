@@ -35,54 +35,41 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: 'javacom-api',
-    kind: 'fullstack',
-    name: 'JavaCom API',
-    type: { pt: 'API REST · E-commerce', en: 'REST API · E-commerce' },
+    slug: 'link-in-bio',
+    kind: 'frontend',
+    name: 'Link in Bio',
+    type: { pt: 'Landing Page · Link in Bio', en: 'Landing Page · Link in Bio' },
     description: {
-      pt: 'API REST de e-commerce com carrinho de compras, gestão de produtos, autenticação JWT e controle de estoque transacional. Documentada com OpenAPI 3 e perfis de acesso ADMIN/USER.',
-      en: 'E-commerce REST API featuring shopping cart, product management, JWT authentication and transactional stock control. Documented with OpenAPI 3 and ADMIN/USER access roles.',
+      pt: 'Página centralizadora de links e presença digital de alta performance com saída 100% estática, múltiplos temas visuais e otimização avançada para SEO e analytics.',
+      en: 'High-performance link-in-bio and digital presence hub with 100% static output, multiple visual themes, and advanced SEO and analytics optimization.',
     },
     bullets: {
       pt: [
-        'Catálogo público de produtos e gestão administrativa com soft delete preservando integridade dos pedidos.',
-        'Carrinho persistente por usuário e checkout transacional com validação e baixa de estoque em uma única operação.',
-        'Autenticação stateless com JWT (HS256), perfis ADMIN/USER e autorização declarativa por método.',
-        'Documentação Swagger/OpenAPI 3 com schemas, exemplos, códigos HTTP e autorização persistida na UI.',
+        'Arquitetura estática com Astro e Tailwind CSS garantindo carregamento ultrarrápido sem JavaScript obrigatório no conteúdo.',
+        'Suporte a 3 temas visuais (Minimal, Modern e Neobrutalist) com modo Dark/Light/System e switcher em tempo real sem FOUC.',
+        'Sistema modular de blocos de conteúdo com mais de 50 integrações, cards de conversão (exit-intent, CTA flutuante, banners) e 6 perfis pré-configurados.',
+        'SEO técnico completo com Open Graph, Schema.org JSON-LD, sitemap dinâmico e integração com 5 ferramentas de analytics.',
       ],
       en: [
-        'Public product catalog and admin management with soft delete that preserves order integrity.',
-        'Per-user persistent cart and transactional checkout with single-step stock validation and decrement.',
-        'Stateless JWT authentication (HS256), ADMIN/USER roles and declarative method-level authorization.',
-        'Swagger/OpenAPI 3 docs with schemas, examples, HTTP status codes and persisted authorization in the UI.',
+        'Static architecture built with Astro and Tailwind CSS ensuring blazing-fast loads with zero mandatory JS for main content.',
+        'Supports 3 visual themes (Minimal, Modern, and Neobrutalist) with Dark/Light/System color modes and instant theme switcher without FOUC.',
+        'Modular content block system featuring 50+ platform integrations, conversion cards (exit-intent, floating CTA, banners), and 6 pre-configured profiles.',
+        'Comprehensive technical SEO with Open Graph, Schema.org JSON-LD, dynamic sitemap, and integrations for 5 analytics providers.',
       ],
     },
-    stack: ['Java 21', 'Spring Boot 4', 'Spring Security', 'JPA / Hibernate', 'H2 Database', 'PostgreSQL', 'OpenAPI / Swagger'],
+    stack: ['Astro', 'Tailwind CSS', 'TypeScript', 'Cloudflare Pages', 'Wrangler', 'Lucide Icons', 'SEO / OpenGraph'],
     images: [
       {
-        src: '/projects/JavaCom_API/swagger.png',
+        src: '/projects/LinkInBio/01.png',
         alt: {
-          pt: 'JavaCom API - documentação interativa Swagger / OpenAPI',
-          en: 'JavaCom API - interactive Swagger / OpenAPI documentation',
-        },
-      },
-      {
-        src: '/projects/JavaCom_API/terminal.mp4',
-        alt: {
-          pt: 'JavaCom API - demonstração da CLI interativa no terminal',
-          en: 'JavaCom API - interactive CLI demo in the terminal',
-        },
-      },
-      {
-        src: '/projects/JavaCom_API/h2-database.png',
-        alt: {
-          pt: 'JavaCom API - console do banco H2 com as tabelas do sistema',
-          en: 'JavaCom API - H2 database console showing the system tables',
+          pt: 'Link in Bio - Interface moderna com tema escuro, timeline de experiências, switcher de estilo e métricas de perfil',
+          en: 'Link in Bio - Modern dark theme interface featuring experience timeline, style switcher, and profile metrics',
         },
       },
     ],
     links: {
-      code: 'https://github.com/Victormoroo/JavaCom_API',
+      demo: 'https://links.vdonoladev.com.br/',
+      code: 'https://github.com/vdonoladev/linkInBio',
     },
   },
   {
@@ -110,21 +97,7 @@ export const projects: Project[] = [
     },
     stack: ['Next.js', 'React 19', 'TypeScript', 'Tailwind CSS'],
     images: [
-      {
-        src: '/projects/NetoCell/01.png',
-        alt: {
-          pt: 'Neto Cell - página inicial do site institucional',
-          en: 'Neto Cell - institutional site landing',
-        },
-      },
-      {
-        src: '/projects/NetoCell/02.png',
-        alt: {
-          pt: 'Neto Cell - seção de serviços e contato',
-          en: 'Neto Cell - services and contact section',
-        },
-      },
-      {
+            {
         src: '/projects/NetoCell/03.png',
         alt: {
           pt: 'Neto Cell - mockup do projeto desktop e mobile',
@@ -134,46 +107,6 @@ export const projects: Project[] = [
     ],
     links: {
       demo: 'https://netocell-vdonoladev.vercel.app/',
-      code: 'https://github.com/vdonoladev/neto-cell',
     },
-  },
-  {
-    slug: 'navaro',
-    kind: 'saas',
-    name: 'Navaro',
-    type: { pt: 'SaaS · Barbearia', en: 'SaaS · Barbershop' },
-    status: 'in-progress',
-    description: {
-      pt: 'SaaS de gestão para barbearias - agenda online, cadastro de clientes e visão financeira em um único painel. Identidade visual personalizada para que cada estabelecimento opere com a própria cara.',
-      en: 'Management SaaS for barbershops - online booking, customer base and financial overview in a single dashboard. Per-shop visual identity so every establishment runs on a system that wears its own brand.',
-    },
-    bullets: {
-      pt: [
-        'Agenda online com confirmação e lembretes automáticos por WhatsApp.',
-        'Cadastro de clientes com histórico de serviços, ticket médio e programa de fidelidade.',
-        'Catálogo de serviços e produtos com cobrança integrada e múltiplas formas de pagamento.',
-        'Personalização visual por barbearia: cada sistema fica com a cara do estabelecimento: cores, logotipo e identidade próprios.',
-      ],
-      en: [
-        'Online booking with automatic WhatsApp confirmations and reminders.',
-        'Customer profiles with service history, average ticket and loyalty program.',
-        'Service and product catalog with integrated checkout and multiple payment methods.',
-        'Per-shop visual customization: each instance carries the shop\'s own brand: colors, logo and identity.',
-      ],
-    },
-    stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
-    images: [
-      {
-        src: {
-          pt: '/projects/Navaro/navaro-pt.png',
-          en: '/projects/Navaro/navaro-eng.png',
-        },
-        alt: {
-          pt: 'Navaro - prévia do painel em português',
-          en: 'Navaro - dashboard preview in English',
-        },
-      },
-    ],
-    links: {},
   },
 ];

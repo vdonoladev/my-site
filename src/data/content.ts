@@ -170,83 +170,131 @@ export const content = {
     },
     highlightLabel: { pt: 'Projeto destaque', en: 'Featured project' },
     items: {
-      pt: [
-        {
-          chapter: 'Out 2025 - atual',
-          company: 'HRT Incorporadora · Ib System',
-          title: 'Analista de TI',
-          bullets: [
-            'Operação e suporte da infraestrutura de TI, atendendo +150 usuários em 3 unidades.',
-            'Gestão de ativos, redes (LAN/Wi-Fi), servidores, backups e políticas de segurança.',
-            'Automações internas e integração de sistemas com scripts e RouterBoard (Mikrotik), incluindo rotinas de backup automatizadas.',
-            'Desenvolvimento de sistemas internos para substituir processos manuais em planilhas e dar mais consistência à operação.',
-            'Atuação próxima a Engenharia, Obras, Administrativo, Comercial e Desenvolvimento - traduzindo demandas operacionais em soluções técnicas.',
-            'Resultados: rotina de backup eliminou 12h de retrabalho/mês; redução de 15% no custo com internet.',
-          ],
-          highlight: {
-            name: 'Omnos',
-            description:
-              'Software interno para controle de patrimônio e estoque da empresa. ReactJS + Vite no web, React Native no mobile e backend em Java + Spring com banco PostgreSQL.',
-          },
-          stack: ['React Native', 'ReactJS', 'TypeScript', 'Vite', 'PostgreSQL', 'PowerShell', 'Mikrotik', 'RouterOS'],
-        },
-        {
-          chapter: 'Mai 2023 - Out 2023',
-          company: 'Compass UOL',
-          title: 'Desenvolvedor Back-End · Java / Spring Boot',
-          bullets: [
-            'APIs REST em Java 17 + Spring Boot, com arquitetura em camadas, injeção de dependência e Clean Code.',
-            'Testes automatizados com JUnit e Mockito cobrindo as regras de negócio.',
-            'Serviços AWS (EC2, S3, RDS) e integração contínua via Git/GitHub.',
-            'Squad ágil em Scrum: dailies, plannings e code reviews.',
-          ],
-          highlight: {
-            name: 'JavaCom_API',
-            description:
-              'API REST de e-commerce com autenticação (Spring Security + JWT), catálogo, carrinho e pedidos. Modelagem em PostgreSQL, Swagger, tratamento global de exceções e deploy em nuvem.',
-          },
-          stack: ['Java', 'Spring Boot', 'Spring Data JPA', 'PostgreSQL', 'AWS', 'Git', 'Postman', 'Swagger'],
-        },
+  pt: [
+    {
+      chapter: 'Dez 2025 - atual',
+      company: 'Autônomo',
+      title: 'Desenvolvedor Web Freelancer',
+      bullets: [
+        'Criação de landing pages, sites institucionais e catálogos digitais de alta conversão para empresas e comércios locais.',
+        'Otimização técnica para SEO Local e Core Web Vitals, garantindo pontuações superiores a 95+ no PageSpeed e melhor posicionamento em buscas geolocalizadas.',
+        'Desenvolvimento de interfaces modernas, responsivas e ultrarrápidas com Astro, React e TypeScript, combinando arquitetura estática com componentes interativos.',
+        'Implementação de CMS customizados e Headless WordPress, permitindo que os próprios clientes gerenciem conteúdos, blogs e catálogos com autonomia.',
+        'Integração direta com APIs de WhatsApp, formulários dinâmicos de captura de leads, Google Maps, Google Analytics 4 e Google Meu Negócio.',
+        'Resultados: aumento médio de 40% no carregamento de páginas e taxa superior de retenção e contatos comerciais via mobile.',
       ],
-      en: [
-        {
-          chapter: 'Oct 2025 - present',
-          company: 'HRT Incorporadora · Ib System',
-          title: 'IT Analyst',
-          bullets: [
-            'IT infrastructure operations and support, serving 150+ users across 3 sites.',
-            'Asset management, LAN/Wi-Fi networking, servers, backups and security policies.',
-            'Internal automations and system integrations with scripts and RouterBoard (Mikrotik), including automated backup routines.',
-            'Built internal systems to replace manual spreadsheet processes and improve operational consistency.',
-            'Close partnership with Engineering, Construction, Admin, Sales and Development teams - translating operational needs into technical solutions.',
-            'Outcomes: backup routine cut 12h of rework/month; 15% reduction in internet costs.',
-          ],
-          highlight: {
-            name: 'Omnos',
-            description:
-              'Internal software for company asset and inventory control. ReactJS + Vite on the web, React Native on mobile, and a Java + Spring backend with a PostgreSQL database.',
-          },
-          stack: ['React Native', 'ReactJS', 'TypeScript', 'Vite', 'Java', 'Spring', 'PostgreSQL', 'PowerShell', 'Mikrotik', 'RouterOS'],
-        },
-        {
-          chapter: 'May 2023 - Oct 2023',
-          company: 'Compass UOL',
-          title: 'Back-End Developer · Java / Spring Boot',
-          bullets: [
-            'REST APIs in Java 17 + Spring Boot with layered architecture, dependency injection and Clean Code.',
-            'Automated tests with JUnit and Mockito covering business rules.',
-            'AWS services (EC2, S3, RDS) and continuous integration via Git/GitHub.',
-            'Agile squad in Scrum: dailies, plannings and code reviews.',
-          ],
-          highlight: {
-            name: 'JavaCom_API',
-            description:
-              'E-commerce REST API with authentication (Spring Security + JWT), catalog, cart and orders. PostgreSQL modeling, Swagger, global exception handling and cloud deploy.',
-          },
-          stack: ['Java', 'Spring Boot', 'Spring Data JPA', 'PostgreSQL', 'AWS', 'Git', 'Postman', 'Swagger'],
-        },
+      highlight: {
+        name: 'Plataformas Web de Alto Desempenho',
+        description:
+          'Ecossistema sob medida para pequenas empresas combinando Astro para máxima velocidade, React/TypeScript para interatividade e WordPress como backend de conteúdo.',
+      },
+      stack: [
+        'Astro',
+        'React',
+        'TypeScript',
+        'Tailwind CSS',
+        'WordPress',
+        'Headless CMS',
+        'Node.js',
+        'Vercel',
+        'SEO Local',
+        'Git'
       ],
     },
+    {
+      chapter: 'Jun 2022 - Dez 2025',
+      company: 'Autônomo',
+      title: 'Desenvolvedor Web Full-Stack & Suporte de TI',
+      bullets: [
+        'Engenharia de Software Web: Arquitetura e desenvolvimento de aplicações ponta a ponta com foco em performance e escalabilidade.',
+        'Infraestrutura & Cloud: Configuração de deploys contínuos, gestão de servidores e DNS (Vercel), chaves SSH e certificados SSL.',
+        'Suporte & Redes: Manutenção preventiva e corretiva de hardware, diagnóstico e configuração de redes locais (LAN/Wi-Fi).',
+        'Gestão de Projetos & Clientes: Atendimento direto ao cliente, levantamento de requisitos técnicos e entregas ágeis utilizando Git/Scrum.',
+      ],
+      highlight: {
+        name: 'Soluções Web Ponta a Ponta',
+        description:
+          'Desenvolvimento e sustentação de sistemas web e APIs customizadas para clientes finais, integrando frontend, backend e rotinas de automação.',
+      },
+      stack: [
+        'HTML5',
+        'CSS3',
+        'JavaScript',
+        'PHP',
+        'Python',
+        'Flask',
+        'Django',
+        'Node.js',
+        'Vercel',
+        'Git',
+        'Linux',
+        'Redes'
+      ],
+    },
+  ],
+  en: [
+    {
+      chapter: 'Dec 2025 - present',
+      company: 'Freelance / Self-Employed',
+      title: 'Freelance Web Developer',
+      bullets: [
+        'Built high-conversion landing pages, institutional websites, and digital product catalogs for local businesses and SMEs.',
+        'Technical optimization for Local SEO and Core Web Vitals, achieving 95+ PageSpeed scores and boosting local search ranking visibility.',
+        'Engineered fast, modern, and responsive UIs with Astro, React, and TypeScript by leveraging static architecture with interactive components.',
+        'Implemented customized CMS setups and Headless WordPress, giving business owners full autonomy to manage blog posts and catalog items.',
+        'Integrated WhatsApp lead capture APIs, dynamic contact forms, Google Maps, Google Analytics 4, and Google Business Profile.',
+        'Outcomes: 40% average reduction in page load times, driving higher mobile visitor retention and inbound sales leads.',
+      ],
+      highlight: {
+        name: 'High-Performance Web Platforms',
+        description:
+          'Custom web ecosystem for small businesses combining Astro for top-tier performance, React/TypeScript for dynamic UI, and WordPress as a headless content backend.',
+      },
+      stack: [
+        'Astro',
+        'React',
+        'TypeScript',
+        'Tailwind CSS',
+        'WordPress',
+        'Headless CMS',
+        'Node.js',
+        'Vercel',
+        'Local SEO',
+        'Git'
+      ],
+    },
+    {
+      chapter: 'Jun 2022 - Dec 2025',
+      company: 'Freelance / Self-Employed',
+      title: 'Full-Stack Web Developer & IT Support',
+      bullets: [
+        'Web Software Engineering: End-to-end architecture and development of web applications with a focus on performance and scalability.',
+        'Infrastructure & Cloud: Continuous deployment setup, server and DNS management (Vercel), SSH keys, and SSL certificates.',
+        'IT Support & Networking: Preventive and corrective hardware maintenance, local network troubleshooting, and configuration (LAN/Wi-Fi).',
+        'Project & Client Management: Direct client consulting, technical requirements gathering, and agile project deliveries using Git/Scrum.',
+      ],
+      highlight: {
+        name: 'End-to-End Web Solutions',
+        description:
+          'Development and maintenance of custom web systems and APIs for direct clients, integrating frontend, backend, and automation routines.',
+      },
+      stack: [
+        'HTML5',
+        'CSS3',
+        'JavaScript',
+        'PHP',
+        'Python',
+        'Flask',
+        'Django',
+        'Node.js',
+        'Vercel',
+        'Git',
+        'Linux',
+        'Networking'
+      ],
+    },
+  ],
+}
   },
 
   contact: {
