@@ -148,4 +148,80 @@ export const projects: Project[] = [
       demo: 'https://sitepsicologa-vdonoladev.vercel.app/',
     },
   },
+  {
+    slug: 'food-landing-page',
+    kind: 'fullstack',
+    name: 'food — Delivery Landing Page',
+    type: { pt: 'Landing Page · Gastronomia & Delivery', en: 'Landing Page · Food & Delivery' },
+    description: {
+      pt: 'Landing page moderna e responsiva voltada para negócios de delivery e gastronomia, combinando cardápio atrativo, depoimentos de clientes e navegação fluida com animações.',
+      en: 'Modern, responsive landing page crafted for food delivery businesses, featuring an enticing menu showcase, customer testimonials, and smooth animated navigation.',
+    },
+    bullets: {
+      pt: [
+        'Desenvolvimento frontend com HTML5 semântico, CSS3 responsivo e JavaScript (ES6+).',
+        'Animações suaves de entrada durante a rolagem de página integradas com a biblioteca ScrollReveal.js.',
+        'Menu interativo adaptado para navegação fluida tanto no desktop quanto em dispositivos móveis.',
+        'Apresentação de cardápio digital estruturado, seção de prova social com depoimentos e botões de contato direto para pedidos via WhatsApp e redes sociais.',
+      ],
+      en: [
+        'Frontend development using semantic HTML5, responsive CSS3, and JavaScript (ES6+).',
+        'Smooth scroll-triggered entrance animations powered by ScrollReveal.js.',
+        'Interactive menu layout tailored for seamless navigation on both desktop and mobile devices.',
+        'Structured digital menu showcase, social proof testimonial section, and direct contact buttons for orders via WhatsApp and social channels.',
+      ],
+    },
+    stack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'ScrollReveal.js', 'Font Awesome', 'Netlify'],
+    images: [
+            {
+        src: '/projects/Food/01.png',
+        alt: {
+          pt: 'Food - mockup do projeto desktop e mobile',
+          en: 'Food - desktop and mobile project mockup',
+        },
+      },
+    ],
+    links: {
+      demo: 'https://food-vdonoladev.netlify.app/',
+      code: 'https://github.com/vdonoladev/food',
+    },
+  },
+  {
+    slug: 'drew-studio',
+    kind: 'fullstack',
+    name: 'Drew Studio',
+    type: { pt: 'Landing Page · Agência Criativa & Marketing', en: 'Landing Page · Creative Agency & Marketing' },
+    description: {
+      pt: 'Landing page moderna e responsiva desenvolvida para uma agência de marketing digital e audiovisual, com alternância de tema Dark/Light, cards de serviços e tabela de planos.',
+      en: 'Modern, responsive landing page crafted for a digital marketing and creative agency, featuring Dark/Light mode switching, service showcase cards, and tiered pricing plans.',
+    },
+    bullets: {
+      pt: [
+        'Desenvolvimento frontend com HTML5 semântico estruturado para SEO e estilização rápida com Tailwind CSS.',
+        'Componentes de interface modernos integrados com a biblioteca Flowbite e ícones Font Awesome 6.',
+        'Controle nativo de modo claro e escuro (Dark/Light Mode) e interações dinâmicas via JavaScript.',
+        'Seções estruturadas para apresentação da agência, portfólio de serviços, perfis de equipe e pacotes de planos comerciais com CTAs de conversão.',
+      ],
+      en: [
+        'Frontend development using semantic, SEO-optimized HTML5 and utility-first styling with Tailwind CSS.',
+        'Modern UI components integrated with Flowbite and customized with Font Awesome 6 icons.',
+        'Native light and dark theme switcher (Dark/Light Mode) with dynamic UI interactions via JavaScript.',
+        'Structured sections for company overview, service catalogs, team profiles, and tiered service pricing packages with conversion CTAs.',
+      ],
+    },
+    stack: ['HTML', 'Tailwind CSS', 'Flowbite', 'JavaScript', 'Font Awesome 6'],
+    images: [
+            {
+        src: '/projects/DrewStudio/01.png',
+        alt: {
+          pt: 'Drew Studio - mockup do projeto desktop e mobile',
+          en: 'Drew Studio - desktop and mobile project mockup',
+        },
+      },
+    ],
+    links: {
+      demo: 'https://drewstudio-vdonoladev.vercel.app/',
+      code: 'https://github.com/vdonoladev/drewStudio',
+    },
+  },
 ];
