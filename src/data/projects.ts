@@ -109,4 +109,43 @@ export const projects: Project[] = [
       demo: 'https://netocell-vdonoladev.vercel.app/',
     },
   },
+  {
+    slug: 'marilei-krauss-psicologa',
+    kind: 'fullstack',
+    name: 'Marilei Krauss — Psicóloga',
+    type: { pt: 'Landing Page · Saúde & Clínica', en: 'Landing Page · Health & Clinic' },
+    description: {
+      pt: 'Landing page institucional desenvolvida para a psicóloga Marilei Krauss, com design acolhedor, arquitetura modular em React e foco total em conversão e agendamento via WhatsApp.',
+      en: 'Institutional landing page built for clinical psychologist Marilei Krauss, featuring a warm design, modular React architecture, and direct conversion funnel to WhatsApp scheduling.',
+    },
+    bullets: {
+      pt: [
+        'Desenvolvimento com React, Vite e Tailwind CSS, proporcionando alta performance de carregamento e interface totalmente responsiva.',
+        'Arquitetura modular dividida entre layout, componentes de UI reutilizáveis e seções temáticas (visão clínica, especialidades e tratamento de traumas).',
+        'Camada de conteúdo centralizada em JavaScript para fácil manutenção de textos e dados sem alterar a estrutura visual da aplicação.',
+        'Otimizações de acessibilidade nativa com Skip Links, contrastes validados, hierarquia semântica e suporte a navegação por teclado.',
+        'Funil de conversão estratégica direcionando para agendamento direto pelo WhatsApp através de CTAs contextuais e dinâmicos.',
+      ],
+      en: [
+        'Built with React, Vite, and Tailwind CSS, delivering blazing-fast loading speeds and a fully responsive layout across all viewports.',
+        'Modular architecture separated into layouts, reusable UI components, and dedicated sections (clinical approach, specialties, trauma therapy).',
+        'Centralized JavaScript content layer enabling seamless text and data updates without touching component layout logic.',
+        'Built-in accessibility standards featuring Skip Links, verified color contrasts, semantic hierarchy, and full keyboard navigation support.',
+        'Strategic conversion funnel designed to drive appointment bookings directly to WhatsApp via contextual, dynamic CTAs.',
+      ],
+    },
+    stack: ['React', 'Vite', 'Tailwind CSS', 'JavaScript', 'HTML', 'CSS', 'Acessibilidade (a11y)'],
+    images: [
+            {
+        src: '/projects/MarileiKrauss/01.png',
+        alt: {
+          pt: 'Marilei Krauss - mockup do projeto desktop e mobile',
+          en: 'Marilei Krauss - desktop and mobile project mockup',
+        },
+      },
+    ],
+    links: {
+      demo: 'https://sitepsicologa-vdonoladev.vercel.app/',
+    },
+  },
 ];
