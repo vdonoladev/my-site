@@ -72,6 +72,54 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: 'bruna-simoes-advocacia',
+    kind: 'fullstack',
+    name: 'Bruna Simões Advocacia',
+    type: {
+      pt: 'Landing Page · Serviços Jurídicos Digitais',
+      en: 'Landing Page · Digital Legal Services',
+    },
+    description: {
+      pt: 'Plataforma institucional de alta sofisticação visual voltada para advocacia 100% online em âmbito nacional, destacando atuação em Direito Civil, de Família e do Trabalho com agendamento direto e conformidade com a OAB/LGPD.',
+      en: 'Sophisticated legal landing page designed for a nationwide 100% digital law practice, highlighting Civil, Family, and Labor Law services with direct online scheduling and full OAB/LGPD compliance.',
+    },
+    bullets: {
+      pt: [
+        'Design institucional refinado com paleta sóbria, microinterações fluidas, textura de ruído tangível e tipografia elegante combinando Cormorant Garamond e Plus Jakarta Sans.',
+        'Apresentação equilibrada das três grandes áreas de atuação (Civil, Família e Trabalhista) acompanhadas de cards de diferenciais técnicos e métricas animadas de impacto.',
+        'Carrossel dinâmico de depoimentos de clientes com paginação por dots e controles laterais, além de accordion interativo para esclarecimento de dúvidas frequentes (FAQ).',
+        'Canal direto de conversão com botão flutuante de WhatsApp, formulário com disparo híbrido (e-mail e WhatsApp), modal de confirmação acessível e dados estruturados Schema.org (LegalService JSON-LD) para SEO local e nacional.',
+      ],
+      en: [
+        'Sophisticated corporate aesthetic featuring subtle tangible noise textures, fluid micro-interactions, and premium typography pairing Cormorant Garamond with Plus Jakarta Sans.',
+        'Balanced presentation of the three core practice areas (Civil, Family, and Labor Law) accompanied by technical differentiator cards and animated impact metrics.',
+        'Dynamic testimonial carousel with dot pagination and arrow navigation, coupled with an interactive accordion for frequently asked questions (FAQ).',
+        'Direct conversion hub featuring a floating WhatsApp CTA, hybrid contact form (email & WhatsApp trigger), accessible confirmation modal, and rich Schema.org JSON-LD structured data for advanced legal SEO.',
+      ],
+    },
+    stack: [
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'SVG',
+      'JSON-LD / Schema.org',
+      'SEO / OpenGraph',
+      'Vercel',
+    ],
+    images: [
+      {
+        src: '/projects/BrunaSimoes/01.png',
+        alt: {
+          pt: 'Bruna Simões Advocacia - Interface de landing page jurídica moderna para atendimento 100% online',
+          en: 'Bruna Simões Law Practice - Modern legal landing page interface for 100% online legal consultations',
+        },
+      },
+    ],
+    links: {
+      demo: 'https://advbrunasimoes-vdonoladev.vercel.app/',
+    },
+  },
+  {
     slug: 'link-in-bio',
     kind: 'fullstack',
     name: 'Link in Bio',
