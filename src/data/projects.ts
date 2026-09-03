@@ -34,6 +34,43 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+    slug: 'vale-imperial',
+    kind: 'fullstack',
+    name: 'Vale Imperial',
+    type: { pt: 'Website Institucional · Turismo & Imóveis', en: 'Corporate Website · Tourism & Real Estate' },
+    description: {
+      pt: 'Plataforma institucional e editorial voltada para curadoria de turismo boutique e imóveis de alto padrão em Petrópolis (RJ), unindo catálogo imobiliário interativo, roteiros privativos e blog cultural.',
+      en: 'Editorial and corporate platform dedicated to boutique tourism and high-end real estate curation in Petrópolis (RJ), combining an interactive property catalog, private tours, and a cultural journal.',
+    },
+    bullets: {
+      pt: [
+        'Interface com estética editorial refinada, cursor flutuante customizado com labels contextuais e menu drawer responsivo com navegação fluida.',
+        'Catálogo imobiliário interativo com filtragem dinâmica por categorias (Casas de Campo, Imóveis Históricos e Investimento) cobrindo regiões nobres da serra.',
+        'Seção dedicada a experiências de turismo autoral com cards informativos, badges de duração e integração de janelas modais dinâmicas para detalhes e CTAs.',
+        'Jornal da Serra integrado para publicação de ensaios e artigos de lifestyle de montanha, além de formulário completo para captação de leads qualificados e SEO técnico avançado com Open Graph.',
+      ],
+      en: [
+        'Refined editorial aesthetic featuring a custom interactive floating cursor with contextual labels and a fluid responsive mobile drawer.',
+        'Interactive real estate catalog with dynamic category filtering (Country Homes, Historic Mansions, and Investment) across premier mountain regions.',
+        'Dedicated boutique tourism section showcasing tailored itineraries, duration badges, and dynamic modal dialogs for content expansion and call-to-actions.',
+        'Integrated editorial journal for mountain lifestyle essays, accompanied by an advanced lead capture form and comprehensive technical SEO with Open Graph meta tags.',
+      ],
+    },
+    stack: ['HTML', 'CSS', 'JavaScript', 'SVG', 'SEO / OpenGraph', 'Vercel'],
+    images: [
+      {
+        src: '/projects/ValeImperial/01.png',
+        alt: {
+          pt: 'Vale Imperial - Interface institucional com curadoria de turismo boutique e imóveis de serra em Petrópolis',
+          en: 'Vale Imperial - Editorial interface featuring boutique tourism curation and luxury mountain real estate in Petrópolis',
+        },
+      },
+    ],
+    links: {
+      demo: 'https://valeimperial-vdonoladev.vercel.app/',
+    },
+  },
   {
     slug: 'link-in-bio',
     kind: 'fullstack',
