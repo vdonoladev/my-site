@@ -10,7 +10,8 @@ export function Footer() {
     <footer className="border-t border-border">
       <div className="container-edge flex flex-col items-start justify-between gap-6 py-10 sm:flex-row sm:items-center">
         <div>
-          <p className="text-sm font-medium tracking-display">Victor Donola Ferreira</p>
+          <p className="text-sm font-medium tracking-display">Víctor Donola Ferreira</p>
+          <p className="text-sm font-medium tracking-display">VD Tech & Suporte | CNPJ: 69.676.193/0001-00</p>
           <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
             {content.footer.role[lang]} · © {year}
           </p>
