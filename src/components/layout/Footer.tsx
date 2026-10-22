@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { SiWhatsapp } from 'react-icons/si';
 import { useLanguage } from '@/hooks/useLanguage';
 import { content, links } from '@/data/content';
 
@@ -10,14 +11,24 @@ export function Footer() {
     <footer className="border-t border-border">
       <div className="container-edge flex flex-col items-start justify-between gap-6 py-10 sm:flex-row sm:items-center">
         <div>
-          <p className="text-sm font-medium tracking-display">Víctor Donola Ferreira</p>
-          <p className="text-sm font-medium tracking-display">VD Tech & Suporte | CNPJ: 69.676.193/0001-00</p>
+          <p className="text-sm font-semibold tracking-display text-foreground">
+            Víctor Donola Ferreira
+          </p>
+          <p className="text-sm text-foreground/85">
+            {content.footer.company} · CNPJ: {content.footer.cnpj}
+          </p>
+          <p className="mt-1 font-mono text-[11px] text-accent">
+            {content.footer.invoiceNotice[lang]}
+          </p>
           <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
             {content.footer.role[lang]} · © {year}
           </p>
         </div>
 
         <div className="flex items-center gap-2">
+          <FooterIcon href={links.whatsapp} label="WhatsApp">
+            <SiWhatsapp size={14} />
+          </FooterIcon>
           <FooterIcon href={links.github} label="GitHub">
             <Github size={15} strokeWidth={1.6} />
           </FooterIcon>

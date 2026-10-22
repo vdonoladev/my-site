@@ -34,7 +34,7 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-    {
+  {
     slug: 'vale-imperial',
     kind: 'fullstack',
     name: 'Vale Imperial',
@@ -161,28 +161,28 @@ export const projects: Project[] = [
     slug: 'neto-cell',
     kind: 'fullstack',
     name: 'Neto Cell Assistência Técnica',
-    type: { pt: 'Site · Negócio Local', en: 'Site · Local Business' },
+    type: { pt: 'Site · Negócio Local & Suporte', en: 'Site · Local Business & Tech Support' },
     description: {
-      pt: 'Site institucional de uma assistência técnica de celulares em Franca-SP, com integração WhatsApp, mapa embutido e SEO local.',
-      en: 'Institutional site for a phone repair shop in Franca-SP, with WhatsApp integration, embedded map and local SEO.',
+      pt: 'Site institucional de uma assistência técnica de celulares e eletrônicos em Franca-SP, com integração direta ao WhatsApp, mapa embutido e estratégia de SEO local.',
+      en: 'Corporate website for a phone and electronics technical repair shop in Franca-SP, featuring direct WhatsApp booking, embedded map, and local SEO strategy.',
     },
     bullets: {
       pt: [
-        'Landing institucional com seções de serviços, depoimentos, contato e horários.',
-        'Integração com WhatsApp por links pré-formatados a partir de número e mensagem padrão.',
-        'Mapa do Google embutido e bloco de contato com endereço, formas de pagamento e redes sociais.',
-        'SEO local com metadata por página e dados estruturados JSON-LD (LocalBusiness).',
+        'Landing institucional completa com seções de serviços técnicos, avaliações de clientes, canais de contato e horários de funcionamento.',
+        'Integração com WhatsApp por links pré-formatados a partir de número e mensagem padrão para triagem ágil de chamados.',
+        'Mapa do Google embutido e bloco de contato com endereço comercial, formas de pagamento e links para redes sociais.',
+        'SEO local com metadata por página e dados estruturados JSON-LD (LocalBusiness) para ranqueamento no Google Maps.',
       ],
       en: [
-        'Institutional landing with services, testimonials, contact and business hours sections.',
-        'WhatsApp integration through pre-formatted URLs built from a base number and default message.',
-        'Embedded Google Maps and a contact block with address, payment methods and social links.',
-        'Local SEO with per-page metadata and JSON-LD structured data (LocalBusiness).',
+        'Complete corporate landing page with repair services catalog, customer testimonials, direct contact channels, and operating hours.',
+        'WhatsApp integration through pre-formatted URLs built from a base number and default message for fast triage.',
+        'Embedded Google Maps and a structured contact block with business address, payment methods, and social profiles.',
+        'Local SEO with per-page metadata and JSON-LD structured data (LocalBusiness) for enhanced Google Maps rankings.',
       ],
     },
-    stack: ['Next.js', 'React 19', 'TypeScript', 'Tailwind CSS'],
+    stack: ['Next.js', 'React 19', 'TypeScript', 'Tailwind CSS', 'SEO Local'],
     images: [
-            {
+      {
         src: '/projects/NetoCell/03.png',
         alt: {
           pt: 'Neto Cell - mockup do projeto desktop e mobile',
@@ -221,7 +221,7 @@ export const projects: Project[] = [
     },
     stack: ['React', 'Vite', 'Tailwind CSS', 'JavaScript', 'HTML', 'CSS', 'Acessibilidade (a11y)'],
     images: [
-            {
+      {
         src: '/projects/MarileiKrauss/01.png',
         alt: {
           pt: 'Marilei Krauss - mockup do projeto desktop e mobile',
@@ -258,7 +258,7 @@ export const projects: Project[] = [
     },
     stack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'ScrollReveal.js', 'Font Awesome', 'Netlify'],
     images: [
-            {
+      {
         src: '/projects/Food/01.png',
         alt: {
           pt: 'Food - mockup do projeto desktop e mobile',
@@ -296,7 +296,7 @@ export const projects: Project[] = [
     },
     stack: ['HTML', 'Tailwind CSS', 'Flowbite', 'JavaScript', 'Font Awesome 6'],
     images: [
-            {
+      {
         src: '/projects/DrewStudio/01.png',
         alt: {
           pt: 'Drew Studio - mockup do projeto desktop e mobile',

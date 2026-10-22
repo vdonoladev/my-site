@@ -9,9 +9,26 @@ export const links = {
   github: 'https://github.com/vdonoladev',
   linkedin: 'https://www.linkedin.com/in/vdonoladev/',
   email: 'contato@vdonoladev.com.br',
+  supportEmail: 'suporte@vdonoladev.com.br',
+  whatsapp: 'https://wa.me/5524992663842',
+  whatsappFormatted: '(24) 99266-3842',
   cv: '/vdonoladev-cv.pdf',
   contactForm: 'https://formspree.io/f/mljeevqg',
 };
+
+export const companyInfo = {
+  name: 'VD Tech & Suporte',
+  legalName: 'VD Tech & Suporte',
+  cnpj: '69.676.193/0001-00',
+  city: 'Petrópolis',
+  state: 'RJ',
+  country: 'Brasil',
+  location: 'Petrópolis - RJ · Atendimento presencial e remoto',
+  businessHours: {
+    pt: 'Seg. a Sex. das 08h às 18h | Sáb. das 08h às 12h',
+    en: 'Mon to Fri: 8am - 6pm | Sat: 8am - 12pm',
+  },
+} as const;
 
 export const nav = {
   pt: [
@@ -19,7 +36,7 @@ export const nav = {
     { id: 'about', label: 'Sobre' },
     { id: 'stack', label: 'Stack' },
     { id: 'projects', label: 'Projetos' },
-    { id: 'experience', label: 'Experiência' },
+    { id: 'experience', label: 'Jornada' },
     { id: 'contact', label: 'Contato' },
   ],
   en: [
@@ -27,7 +44,7 @@ export const nav = {
     { id: 'about', label: 'About' },
     { id: 'stack', label: 'Stack' },
     { id: 'projects', label: 'Projects' },
-    { id: 'experience', label: 'Experience' },
+    { id: 'experience', label: 'Journey' },
     { id: 'contact', label: 'Contact' },
   ],
 } as const;
@@ -35,12 +52,12 @@ export const nav = {
 export const content = {
   meta: {
     title: {
-      pt: 'Victor Donola Ferreira · Full-Stack Developer · React, TypeScript, Java & Spring',
-      en: 'Victor Donola Ferreira · Full-Stack Developer · React, TypeScript, Java & Spring',
+      pt: 'Victor Donola Ferreira · Full-Stack Developer & Soluções em TI · VD Tech & Suporte',
+      en: 'Victor Donola Ferreira · Full-Stack Developer & IT Solutions · VD Tech & Suporte',
     },
     description: {
-      pt: 'Portfólio de Victor Donola Ferreira - Desenvolvedor Full-Stack. Construo aplicações web modernas com React, Next.js, TypeScript, Node.js, Java e Spring Boot.',
-      en: 'Portfolio of Victor Donola Ferreira - Full-Stack Developer. I build modern web applications with React, Next.js, TypeScript, Node.js, Java and Spring Boot.',
+      pt: 'Desenvolvedor Full-Stack e Fundador da VD Tech & Suporte (CNPJ 69.676.193/0001-00). Construo aplicações web modernas com Astro, React e Next.js, com infraestrutura sólida e suporte corporativo de TI com emissão de NFS-e.',
+      en: 'Full-Stack Developer and Founder of VD Tech & Suporte. I build modern web applications with Astro, React, and Next.js, backed by reliable IT infrastructure and corporate tech support.',
     },
   },
 
@@ -51,12 +68,12 @@ export const content = {
 
   hero: {
     badge: {
-      pt: 'Desenvolvedor Full-Stack',
-      en: 'Full-Stack Developer',
+      pt: 'Desenvolvedor Full-Stack & Soluções em TI',
+      en: 'Full-Stack Developer & IT Solutions',
     },
     role: {
-      pt: 'Desenvolvedor Full-Stack',
-      en: 'Full-Stack Developer',
+      pt: 'Desenvolvedor Full-Stack & Fundador da VD Tech & Suporte',
+      en: 'Full-Stack Developer & Founder of VD Tech & Suporte',
     },
     name: 'Victor Donola Ferreira',
     headline: {
@@ -64,63 +81,124 @@ export const content = {
       en: 'I build modern web applications from refined front-end to structured back-end.',
     },
     sub: {
-      pt: 'Foco em interfaces bem construídas, código limpo e experiências consistentes em produto.',
-      en: 'Focused on well-crafted interfaces, clean code and consistent product experiences.',
+      pt: 'Aliando desenvolvimento de software a infraestrutura sólida, suporte técnico ágil e emissão de nota fiscal para empresas.',
+      en: 'Pairing modern software development with solid infrastructure, agile technical support, and full fiscal compliance.',
     },
     cta: {
       projects: { pt: 'Ver projetos', en: 'View projects' },
+      services: { pt: 'Conhecer serviços', en: 'Explore services' },
       contact: { pt: 'Entrar em contato', en: 'Get in touch' },
       cv: { pt: 'Baixar CV', en: 'Download CV' },
     },
     location: {
-      pt: 'Brasil - disponível remoto',
-      en: 'Brazil - open to remote',
+      pt: 'Petrópolis - RJ · Atendimento presencial e remoto',
+      en: 'Petrópolis, RJ (Brazil) · On-site & remote service',
     },
   },
 
   about: {
     label: { pt: 'Sobre', en: 'About' },
     title: {
-      pt: 'Desenvolvedor focado em qualidade,\nprodutividade e detalhe.',
-      en: 'A developer focused on quality,\nproductivity and detail.',
+      pt: 'Engenharia de software com visão de produto e infraestrutura.',
+      en: 'Software engineering with a product mindset and infrastructure focus.',
     },
     paragraphs: {
       pt: [
-        'Sou desenvolvedor full stack com paixão por construir produtos digitais bem acabados. Trabalho com React, Next.js e TypeScript no front-end e Node.js, Java e Spring Boot no back-end, sempre buscando o equilíbrio entre arquitetura sólida e experiência refinada para o usuário final.',
-        'Acredito que software bem feito é o resultado de decisões pequenas e consistentes: escolher a abstração certa, escrever um teste a mais, refinar uma transição até parecer natural. É essa atenção que tento levar para cada entrega.',
+        'Sou desenvolvedor full-stack e responsável técnico pela VD Tech & Suporte. Uno a construção de produtos digitais bem acabados — utilizando React, Next.js, Astro e TypeScript no front-end e ecossistema Node.js e Java/Spring Boot no back-end — à gestão de infraestrutura técnica, redes locais e suporte corporativo de TI.',
+        'Acredito que software de excelência vai além da interface: depende de estabilidade operacional, escolhas arquiteturais conscientes e confiabilidade na ponta final. Atendo desde projetos de software sob medida até pequenos comércios e empresas que buscam presença web ágil, segurança de dados e suporte contínuo com emissão de Nota Fiscal (NFS-e).',
       ],
       en: [
-        "I'm a full stack developer with a passion for building well-crafted digital products. I work with React, Next.js and TypeScript on the front-end, and Node.js, Java and Spring Boot on the back-end, always looking for the balance between solid architecture and a refined end-user experience.",
-        'I believe great software is the result of small, consistent decisions: choosing the right abstraction, writing one more test, refining a transition until it feels natural. That care is what I bring to every delivery.',
+        "I'm a full-stack developer and the technical lead at VD Tech & Suporte. I combine craft-oriented digital product development — using React, Next.js, Astro, and TypeScript on the front-end, and Node.js with Java/Spring Boot on the back-end — with hands-on IT infrastructure, networking, and corporate technical support.",
+        'I believe great software goes beyond the interface: it relies on operational stability, intentional architecture, and reliability. I serve both custom software projects and regional businesses seeking fast web platforms, data security, and ongoing technical support with full fiscal compliance (NFS-e).',
       ],
     },
     pillars: {
       pt: [
         {
-          title: 'Front-end com atenção a UI/UX',
-          body: 'Interfaces responsivas, acessíveis e com microinterações pensadas para o usuário.',
+          title: 'Front-end refinado & Alta Performance',
+          body: 'Interfaces responsivas, acessíveis, otimizadas para Core Web Vitals (95+ PageSpeed) e focadas em conversão e retenção.',
         },
         {
-          title: 'Back-end estruturado e escalável',
-          body: 'APIs limpas, modelagem coerente e código preparado para crescer com o produto.',
+          title: 'Back-end estruturado & Infraestrutura',
+          body: 'APIs limpas, modelagem coerente de dados, configuração de servidores, DNS, certificados SSL e segurança em nuvem.',
         },
         {
-          title: 'Mentalidade de produto',
-          body: 'Decisões guiadas por impacto, melhoria contínua e clareza técnica.',
+          title: 'Atendimento Corporativo & Suporte Técnico',
+          body: 'Operação formalizada com contratos transparentes, conformidade com a LGPD, rotinas de backup e emissão de NFS-e.',
         },
       ],
       en: [
         {
-          title: 'Front-end with UI/UX care',
-          body: 'Responsive, accessible interfaces with microinteractions designed for the user.',
+          title: 'Refined Front-end & High Performance',
+          body: 'Responsive, accessible interfaces optimized for Core Web Vitals (95+ PageSpeed) designed for conversion and retention.',
         },
         {
-          title: 'Structured, scalable back-end',
-          body: 'Clean APIs, coherent modeling and code ready to grow with the product.',
+          title: 'Structured Back-end & Infrastructure',
+          body: 'Clean APIs, coherent data modeling, server deployment, DNS management, SSL certificates, and cloud security.',
         },
         {
-          title: 'Product mindset',
-          body: 'Decisions driven by impact, continuous improvement and technical clarity.',
+          title: 'Corporate IT Support & Reliability',
+          body: 'Fully formalized operations with clear contracts, LGPD compliance, secure backup routines, and official invoicing (NFS-e).',
+        },
+      ],
+    },
+  },
+
+  services: {
+    label: { pt: 'Serviços & Atuação', en: 'Services & Solutions' },
+    title: {
+      pt: 'O que entrego para o seu negócio crescer com estabilidade.',
+      en: 'What I deliver to help your business grow with stability.',
+    },
+    sub: {
+      pt: 'Soluções integradas de presença digital, engenharia web e suporte operacional.',
+      en: 'Integrated solutions covering digital presence, web engineering, and operational IT support.',
+    },
+    items: {
+      pt: [
+        {
+          number: '01',
+          tag: 'Web & Presença Digital',
+          title: 'Desenvolvimento Web & Landing Pages',
+          description:
+            'Criação de landing pages de alta conversão, sites institucionais e catálogos digitais com carregamento ultrarrápido (Astro e React), SEO Local avançado para o Google e integração direta com WhatsApp e formulários inteligentes.',
+        },
+        {
+          number: '02',
+          tag: 'Cloud & Domínios',
+          title: 'Infraestrutura Digital, DNS & E-mails',
+          description:
+            'Configuração completa de presença digital: registro de domínios, apontamento de DNS, e-mails corporativos (Google Workspace), certificados de segurança SSL (HTTPS) e esteiras de hospedagem em nuvem (Vercel e Cloudflare).',
+        },
+        {
+          number: '03',
+          tag: 'TI Corporativo & Redes',
+          title: 'Suporte Técnico & Gestão Preventiva',
+          description:
+            'Planos mensais e atendimentos pontuais para comércios e escritórios: manutenção preventiva e corretiva de computadores, estabilização de redes cabeadas e Wi-Fi, proteção contra vírus, rotinas de backup e atendimento remoto e presencial em Petrópolis e região.',
+        },
+      ],
+      en: [
+        {
+          number: '01',
+          tag: 'Web & Digital Presence',
+          title: 'Web Development & Landing Pages',
+          description:
+            'High-converting landing pages, corporate websites, and digital product catalogs built with blazing-fast frameworks (Astro & React), advanced Local SEO, and direct WhatsApp lead capture.',
+        },
+        {
+          number: '02',
+          tag: 'Cloud & Domains',
+          title: 'Digital Infrastructure, DNS & Workspaces',
+          description:
+            'End-to-end digital foundation: domain registration, DNS management, Google Workspace setup, SSL security certificates (HTTPS), and automated cloud hosting (Vercel & Cloudflare).',
+        },
+        {
+          number: '03',
+          tag: 'Corporate IT & Networking',
+          title: 'IT Support & Preventive Management',
+          description:
+            'Monthly support agreements and on-demand technical services for regional businesses: hardware maintenance, LAN/Wi-Fi network stabilization, malware removal, backup routines, and fast remote/on-site triage.',
         },
       ],
     },
@@ -133,7 +211,7 @@ export const content = {
       en: 'Tools that I have extensive knowledge of.',
     },
     sub: {
-      pt: 'Selecionadas pela ergonomia, performance, maturidade e experiencia.',
+      pt: 'Selecionadas pela ergonomia, performance, maturidade e experiência.',
       en: 'Picked for ergonomics, performance, maturity and experience.',
     },
     showAll: { pt: 'Ver tudo', en: 'Show all' },
@@ -170,131 +248,123 @@ export const content = {
     },
     highlightLabel: { pt: 'Projeto destaque', en: 'Featured project' },
     items: {
-  pt: [
-    {
-      chapter: 'Dez 2025 - atual',
-      company: 'Autônomo',
-      title: 'Desenvolvedor Web Freelancer',
-      bullets: [
-        'Criação de landing pages, sites institucionais e catálogos digitais de alta conversão para empresas e comércios locais.',
-        'Otimização técnica para SEO Local e Core Web Vitals, garantindo pontuações superiores a 95+ no PageSpeed e melhor posicionamento em buscas geolocalizadas.',
-        'Desenvolvimento de interfaces modernas, responsivas e ultrarrápidas com Astro, React e TypeScript, combinando arquitetura estática com componentes interativos.',
-        'Implementação de CMS customizados e Headless WordPress, permitindo que os próprios clientes gerenciem conteúdos, blogs e catálogos com autonomia.',
-        'Integração direta com APIs de WhatsApp, formulários dinâmicos de captura de leads, Google Maps, Google Analytics 4 e Google Meu Negócio.',
-        'Resultados: aumento médio de 40% no carregamento de páginas e taxa superior de retenção e contatos comerciais via mobile.',
+      pt: [
+        {
+          chapter: '2026 - atual',
+          company: 'VD Tech & Suporte',
+          title: 'Fundador & Desenvolvedor Full-Stack / Soluções em TI',
+          bullets: [
+            'Desenvolvimento de landing pages, plataformas institucionais e catálogos digitais de alta conversão para empresas e comércios locais.',
+            'Otimização técnica para SEO Local e Core Web Vitals, garantindo pontuações superiores a 95+ no PageSpeed e melhor posicionamento em buscas geolocalizadas e no Google Perfil de Empresa.',
+            'Consultoria e gestão de infraestrutura: implantação de domínios, DNS, Google Workspace corporativo, certificados SSL e pipelines de deploy contínuo via Vercel e Cloudflare.',
+            'Suporte de TI e manutenção preventiva para comércios e escritórios: montagem e estabilização de redes locais (cabeadas e Wi-Fi), salvaguarda de dados/backups e suporte ágil remoto e presencial.',
+            'Operação formalizada com contratos transparentes, conformidade com a LGPD e emissão de Nota Fiscal Eletrônica (NFS-e).',
+          ],
+          highlight: {
+            name: 'Ecossistema Web & Suporte Integrado',
+            description:
+              'Solução completa para empresas: unindo presença digital veloz em Astro/React com sustentação contínua de infraestrutura, redes e estações de trabalho.',
+          },
+          stack: [
+            'Astro',
+            'React',
+            'TypeScript',
+            'Tailwind CSS',
+            'Node.js',
+            'Vercel',
+            'Redes & Wi-Fi',
+            'SEO Local',
+            'Git',
+          ],
+        },
+        {
+          chapter: 'Jun 2022 - Dez 2025',
+          company: 'Autônomo',
+          title: 'Desenvolvedor Web Full-Stack & Suporte de TI',
+          bullets: [
+            'Engenharia de Software Web: Arquitetura e desenvolvimento de aplicações ponta a ponta com foco em performance e escalabilidade.',
+            'Infraestrutura & Cloud: Configuração de deploys contínuos, gestão de servidores e DNS (Vercel), chaves SSH e certificados SSL.',
+            'Suporte & Redes: Manutenção preventiva e corretiva de hardware, diagnóstico e configuração de redes locais (LAN/Wi-Fi).',
+            'Gestão de Projetos & Clientes: Atendimento direto ao cliente, levantamento de requisitos técnicos e entregas ágeis utilizando Git/Scrum.',
+          ],
+          highlight: {
+            name: 'Soluções Web Ponta a Ponta',
+            description:
+              'Desenvolvimento e sustentação de sistemas web e APIs customizadas para clientes finais, integrando frontend, backend e rotinas de automação.',
+          },
+          stack: [
+            'HTML5',
+            'CSS3',
+            'JavaScript',
+            'PHP',
+            'Python',
+            'Node.js',
+            'Vercel',
+            'Git',
+            'Linux',
+            'Redes',
+          ],
+        },
       ],
-      highlight: {
-        name: 'Plataformas Web de Alto Desempenho',
-        description:
-          'Ecossistema sob medida para pequenas empresas combinando Astro para máxima velocidade, React/TypeScript para interatividade e WordPress como backend de conteúdo.',
-      },
-      stack: [
-        'Astro',
-        'React',
-        'TypeScript',
-        'Tailwind CSS',
-        'WordPress',
-        'Headless CMS',
-        'Node.js',
-        'Vercel',
-        'SEO Local',
-        'Git'
-      ],
-    },
-    {
-      chapter: 'Jun 2022 - Dez 2025',
-      company: 'Autônomo',
-      title: 'Desenvolvedor Web Full-Stack & Suporte de TI',
-      bullets: [
-        'Engenharia de Software Web: Arquitetura e desenvolvimento de aplicações ponta a ponta com foco em performance e escalabilidade.',
-        'Infraestrutura & Cloud: Configuração de deploys contínuos, gestão de servidores e DNS (Vercel), chaves SSH e certificados SSL.',
-        'Suporte & Redes: Manutenção preventiva e corretiva de hardware, diagnóstico e configuração de redes locais (LAN/Wi-Fi).',
-        'Gestão de Projetos & Clientes: Atendimento direto ao cliente, levantamento de requisitos técnicos e entregas ágeis utilizando Git/Scrum.',
-      ],
-      highlight: {
-        name: 'Soluções Web Ponta a Ponta',
-        description:
-          'Desenvolvimento e sustentação de sistemas web e APIs customizadas para clientes finais, integrando frontend, backend e rotinas de automação.',
-      },
-      stack: [
-        'HTML5',
-        'CSS3',
-        'JavaScript',
-        'PHP',
-        'Python',
-        'Flask',
-        'Django',
-        'Node.js',
-        'Vercel',
-        'Git',
-        'Linux',
-        'Redes'
-      ],
-    },
-  ],
-  en: [
-    {
-      chapter: 'Dec 2025 - present',
-      company: 'Freelance / Self-Employed',
-      title: 'Freelance Web Developer',
-      bullets: [
-        'Built high-conversion landing pages, institutional websites, and digital product catalogs for local businesses and SMEs.',
-        'Technical optimization for Local SEO and Core Web Vitals, achieving 95+ PageSpeed scores and boosting local search ranking visibility.',
-        'Engineered fast, modern, and responsive UIs with Astro, React, and TypeScript by leveraging static architecture with interactive components.',
-        'Implemented customized CMS setups and Headless WordPress, giving business owners full autonomy to manage blog posts and catalog items.',
-        'Integrated WhatsApp lead capture APIs, dynamic contact forms, Google Maps, Google Analytics 4, and Google Business Profile.',
-        'Outcomes: 40% average reduction in page load times, driving higher mobile visitor retention and inbound sales leads.',
-      ],
-      highlight: {
-        name: 'High-Performance Web Platforms',
-        description:
-          'Custom web ecosystem for small businesses combining Astro for top-tier performance, React/TypeScript for dynamic UI, and WordPress as a headless content backend.',
-      },
-      stack: [
-        'Astro',
-        'React',
-        'TypeScript',
-        'Tailwind CSS',
-        'WordPress',
-        'Headless CMS',
-        'Node.js',
-        'Vercel',
-        'Local SEO',
-        'Git'
-      ],
-    },
-    {
-      chapter: 'Jun 2022 - Dec 2025',
-      company: 'Freelance / Self-Employed',
-      title: 'Full-Stack Web Developer & IT Support',
-      bullets: [
-        'Web Software Engineering: End-to-end architecture and development of web applications with a focus on performance and scalability.',
-        'Infrastructure & Cloud: Continuous deployment setup, server and DNS management (Vercel), SSH keys, and SSL certificates.',
-        'IT Support & Networking: Preventive and corrective hardware maintenance, local network troubleshooting, and configuration (LAN/Wi-Fi).',
-        'Project & Client Management: Direct client consulting, technical requirements gathering, and agile project deliveries using Git/Scrum.',
-      ],
-      highlight: {
-        name: 'End-to-End Web Solutions',
-        description:
-          'Development and maintenance of custom web systems and APIs for direct clients, integrating frontend, backend, and automation routines.',
-      },
-      stack: [
-        'HTML5',
-        'CSS3',
-        'JavaScript',
-        'PHP',
-        'Python',
-        'Flask',
-        'Django',
-        'Node.js',
-        'Vercel',
-        'Git',
-        'Linux',
-        'Networking'
+      en: [
+        {
+          chapter: '2026 - present',
+          company: 'VD Tech & Suporte',
+          title: 'Founder & Full-Stack Developer / IT Solutions',
+          bullets: [
+            'Built high-conversion landing pages, corporate websites, and digital catalogs for businesses and regional companies.',
+            'Technical optimization for Local SEO and Core Web Vitals (95+ PageSpeed scores), improving search visibility and Google Business Profile rankings.',
+            'Digital infrastructure consulting: domain management, DNS records, Google Workspace setup, SSL security, and CI/CD pipelines via Vercel & Cloudflare.',
+            'Corporate IT support for SMEs: preventive maintenance, local network optimization (LAN & Wi-Fi), and secure data backup routines.',
+            'Fully compliant business operations with clear service contracts, LGPD data privacy, and electronic fiscal invoicing (NFS-e).',
+          ],
+          highlight: {
+            name: 'Integrated Web & IT Support Ecosystem',
+            description:
+              'End-to-end digital presence and operational support: pairing blazing-fast Astro/React interfaces with reliable IT infrastructure.',
+          },
+          stack: [
+            'Astro',
+            'React',
+            'TypeScript',
+            'Tailwind CSS',
+            'Node.js',
+            'Vercel',
+            'Networking',
+            'Local SEO',
+            'Git',
+          ],
+        },
+        {
+          chapter: 'Jun 2022 - Dec 2025',
+          company: 'Freelance / Self-Employed',
+          title: 'Full-Stack Web Developer & IT Support',
+          bullets: [
+            'Web Software Engineering: End-to-end architecture and development of web applications with a focus on performance and scalability.',
+            'Infrastructure & Cloud: Continuous deployment setup, server and DNS management (Vercel), SSH keys, and SSL certificates.',
+            'IT Support & Networking: Preventive and corrective hardware maintenance, local network troubleshooting, and configuration (LAN/Wi-Fi).',
+            'Project & Client Management: Direct client consulting, technical requirements gathering, and agile project deliveries using Git/Scrum.',
+          ],
+          highlight: {
+            name: 'End-to-End Web Solutions',
+            description:
+              'Development and maintenance of custom web systems and APIs for direct clients, integrating frontend, backend, and automation routines.',
+          },
+          stack: [
+            'HTML5',
+            'CSS3',
+            'JavaScript',
+            'PHP',
+            'Python',
+            'Node.js',
+            'Vercel',
+            'Git',
+            'Linux',
+            'Networking',
+          ],
+        },
       ],
     },
-  ],
-}
   },
 
   contact: {
@@ -304,11 +374,34 @@ export const content = {
       en: "Let's build something together?",
     },
     sub: {
-      pt: 'Aberto a oportunidades, projetos sob medida e conversas honestas sobre engenharia e produto.',
-      en: 'Open to opportunities, tailored projects and honest conversations about engineering and product.',
+      pt: 'Aberto a novos projetos, consultoria técnica em infraestrutura e propostas de suporte corporativo em TI.',
+      en: 'Open to new projects, technical infrastructure consulting and corporate IT support agreements.',
+    },
+    channels: {
+      commercial: {
+        label: { pt: 'Projetos & Comercial', en: 'Projects & Sales' },
+        email: 'contato@vdonoladev.com.br',
+      },
+      support: {
+        label: { pt: 'Atendimento Técnico & Chamados', en: 'Helpdesk & Support' },
+        email: 'suporte@vdonoladev.com.br',
+      },
+      whatsapp: {
+        label: { pt: 'WhatsApp Comercial', en: 'Business WhatsApp' },
+        display: '(24) 99266-3842',
+        link: 'https://wa.me/5524992663842',
+      },
+      location: {
+        label: { pt: 'Localização', en: 'Location' },
+        value: {
+          pt: 'Petrópolis - RJ · Atendimento presencial e remoto',
+          en: 'Petrópolis, RJ (Brazil) · On-site & remote service',
+        },
+      },
     },
     cta: {
       email: { pt: 'Enviar e-mail', en: 'Send email' },
+      whatsapp: { pt: 'Chamar no WhatsApp', en: 'Chat on WhatsApp' },
       linkedin: { pt: 'LinkedIn', en: 'LinkedIn' },
       github: { pt: 'GitHub', en: 'GitHub' },
     },
@@ -328,7 +421,7 @@ export const content = {
         name: { pt: 'Como você se chama', en: 'What should I call you' },
         email: { pt: 'voce@exemplo.com', en: 'you@example.com' },
         subject: { pt: 'Sobre o que quer falar (opcional)', en: 'What is this about (optional)' },
-        message: { pt: 'Conta um pouco do que você tem em mente.', en: 'Tell me a bit about what you have in mind.' },
+        message: { pt: 'Conte um pouco sobre o projeto ou suporte de TI que sua empresa precisa.', en: 'Tell me about your project or the IT support your business needs.' },
       },
       defaultSubject: {
         pt: 'Contato pelo portfólio',
@@ -339,8 +432,8 @@ export const content = {
       sending: { pt: 'Enviando…', en: 'Sending…' },
       done: { pt: 'Fechar', en: 'Close' },
       hint: {
-        pt: 'Costumo responder em até 48 horas.',
-        en: 'I usually reply within 48 hours.',
+        pt: 'Respondo normalmente em até 24 horas úteis.',
+        en: 'I usually reply within 24 business hours.',
       },
       success: {
         title: { pt: 'Mensagem enviada', en: 'Message sent' },
@@ -390,7 +483,13 @@ export const content = {
   },
 
   footer: {
-    role: { pt: 'Desenvolvedor Full-Stack', en: 'Full-Stack Developer' },
+    company: 'VD Tech & Suporte',
+    cnpj: '69.676.193/0001-00',
+    invoiceNotice: {
+      pt: 'Nota Fiscal de Serviços (NFS-e) emitida para todos os serviços.',
+      en: 'Official electronic invoices (NFS-e) issued for all services.',
+    },
+    role: { pt: 'Desenvolvedor Full-Stack & Soluções em TI', en: 'Full-Stack Developer & IT Solutions' },
     rights: {
       pt: 'Todos os direitos reservados.',
       en: 'All rights reserved.',

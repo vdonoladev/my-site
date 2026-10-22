@@ -249,8 +249,7 @@ const palette: Record<TokenKind, string> = {
 type Token = { kind: TokenKind; text: string };
 type CodeLine = { gutter: string; tokens: Token[] };
 
-// Each entry is a visible row in the editor. The 10th row is the wrap continuation
-// of line 9, so its gutter label is empty (no number, no extra line counted).
+// Cada entrada é uma linha visível no editor simulado.
 const codeLines: ReadonlyArray<CodeLine> = [
   { gutter: '01', tokens: [
     { kind: 'keyword', text: 'export const ' },
@@ -266,35 +265,55 @@ const codeLines: ReadonlyArray<CodeLine> = [
   ]},
   { gutter: '03', tokens: [
     { kind: 'ws',      text: '  ' },
-    { kind: 'prop',    text: 'role' },
+    { kind: 'prop',    text: 'company' },
     { kind: 'plain',   text: ': ' },
-    { kind: 'string',  text: '"Full-Stack Developer"' },
+    { kind: 'string',  text: '"VD Tech & Suporte"' },
     { kind: 'plain',   text: ',' },
   ]},
   { gutter: '04', tokens: [
     { kind: 'ws',      text: '  ' },
+    { kind: 'prop',    text: 'cnpj' },
+    { kind: 'plain',   text: ': ' },
+    { kind: 'string',  text: '"69.676.193/0001-00"' },
+    { kind: 'plain',   text: ',' },
+  ]},
+  { gutter: '05', tokens: [
+    { kind: 'ws',      text: '  ' },
+    { kind: 'prop',    text: 'role' },
+    { kind: 'plain',   text: ': ' },
+    { kind: 'string',  text: '"Full-Stack & IT Solutions"' },
+    { kind: 'plain',   text: ',' },
+  ]},
+  { gutter: '06', tokens: [
+    { kind: 'ws',      text: '  ' },
     { kind: 'prop',    text: 'focus' },
     { kind: 'plain',   text: ': [' },
   ]},
-  { gutter: '05', tokens: [
+  { gutter: '07', tokens: [
     { kind: 'ws',      text: '    ' },
     { kind: 'string',  text: '"clean code"' },
     { kind: 'plain',   text: ',' },
   ]},
-  { gutter: '06', tokens: [
+  { gutter: '08', tokens: [
     { kind: 'ws',      text: '    ' },
     { kind: 'string',  text: '"refined UI"' },
     { kind: 'plain',   text: ',' },
   ]},
-  { gutter: '07', tokens: [
+  { gutter: '09', tokens: [
     { kind: 'ws',      text: '    ' },
     { kind: 'string',  text: '"product mindset"' },
+    { kind: 'plain',   text: ',' },
   ]},
-  { gutter: '08', tokens: [
+  { gutter: '10', tokens: [
+    { kind: 'ws',      text: '    ' },
+    { kind: 'string',  text: '"infra & IT"' },
+    { kind: 'plain',   text: ',' },
+  ]},
+  { gutter: '11', tokens: [
     { kind: 'ws',      text: '  ' },
     { kind: 'plain',   text: '],' },
   ]},
-  { gutter: '09', tokens: [
+  { gutter: '12', tokens: [
     { kind: 'ws',      text: '  ' },
     { kind: 'prop',    text: 'stack' },
     { kind: 'plain',   text: ': ' },
@@ -316,20 +335,20 @@ const codeLines: ReadonlyArray<CodeLine> = [
     { kind: 'string',  text: '"PostgreSQL"' },
     { kind: 'plain',   text: ']),' },
   ]},
-  { gutter: '10', tokens: [
+  { gutter: '13', tokens: [
     { kind: 'ws',      text: '  ' },
     { kind: 'prop',    text: 'available' },
     { kind: 'plain',   text: ': ' },
     { kind: 'boolean', text: 'true' },
     { kind: 'plain',   text: ',' },
   ]},
-  { gutter: '11', tokens: [
+  { gutter: '14', tokens: [
     { kind: 'plain',   text: '} as ' },
     { kind: 'type',    text: 'const' },
     { kind: 'plain',   text: ';' },
   ]},
-  // Empty trailing line. Acts as the "home" for the blinking caret after typing finishes.
-  { gutter: '12', tokens: [] },
+  // Linha final vazia para repouso do cursor piscante após terminar de digitar.
+  { gutter: '15', tokens: [] },
 ];
 
 // Char counts per line (excluding the newline that separates rows during typing).
@@ -404,7 +423,7 @@ function TypedCode() {
                   numberVisible && line.gutter ? 'opacity-100' : 'opacity-0',
                 )}
               >
-                {line.gutter || ' '}
+                {line.gutter || ' '}
               </span>
             </div>
             <pre

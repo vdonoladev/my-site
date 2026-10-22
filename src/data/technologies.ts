@@ -18,8 +18,9 @@ import {
   SiPostman,
   SiLinux,
   SiApple,
+  SiAstro,
 } from 'react-icons/si';
-import { FaJava } from 'react-icons/fa';
+import { FaJava, FaWifi } from 'react-icons/fa';
 import type { IconType } from 'react-icons';
 
 export type TechCategory = 'frontend' | 'mobile' | 'backend' | 'database' | 'tools';
@@ -37,6 +38,7 @@ export interface Tech {
 export const technologies: Tech[] = [
   { name: 'React',         icon: SiReact,       category: 'frontend', color: '#61dafb' },
   { name: 'Next.js',       icon: SiNextdotjs,   category: 'frontend', color: '#ffffff', colorLight: '#000000' },
+  { name: 'Astro',         icon: SiAstro,       category: 'frontend', color: '#ff5d01' },
   { name: 'TypeScript',    icon: SiTypescript,  category: 'frontend', color: '#3178c6' },
   { name: 'JavaScript',    icon: SiJavascript,  category: 'frontend', color: '#f7df1e' },
   { name: 'Tailwind CSS',  icon: SiTailwindcss, category: 'frontend', color: '#38bdf8' },
@@ -52,6 +54,7 @@ export const technologies: Tech[] = [
   { name: 'Vite',          icon: SiVite,        category: 'tools',    color: '#646cff' },
   { name: 'Docker',        icon: SiDocker,      category: 'tools',    color: '#2496ed' },
   { name: 'Git',           icon: SiGit,         category: 'tools',    color: '#f05032' },
+  { name: 'Redes & Wi-Fi', icon: FaWifi,        category: 'tools',    color: '#10b981' },
   { name: 'IntelliJ IDEA', icon: SiIntellijidea, category: 'tools',   color: '#fe2857' },
   { name: 'Postman',       icon: SiPostman,     category: 'tools',    color: '#ff6c37' },
   { name: 'Linux',         icon: SiLinux,       category: 'tools',    color: '#fcc624' },
