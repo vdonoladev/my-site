@@ -13,7 +13,7 @@ export function Experience() {
     <section id="experience" className="relative scroll-mt-24 border-y border-border bg-muted/30 py-24 sm:py-32">
       <div className="container-edge">
         <Reveal>
-          <SectionLabel number="04" label={t.label[lang]} />
+          <SectionLabel number="05" label={t.label[lang]} />
         </Reveal>
 
         <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-12">

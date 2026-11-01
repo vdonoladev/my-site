@@ -57,6 +57,7 @@ export const nav = {
   pt: [
     { id: 'home', label: 'Início' },
     { id: 'about', label: 'Sobre' },
+    { id: 'services', label: 'Serviços' },
     { id: 'stack', label: 'Stack' },
     { id: 'projects', label: 'Projetos' },
     { id: 'experience', label: 'Jornada' },
@@ -65,6 +66,7 @@ export const nav = {
   en: [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
+    { id: 'services', label: 'Services' },
     { id: 'stack', label: 'Stack' },
     { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Journey' },
@@ -104,8 +106,8 @@ export const content = {
       en: 'I build modern web applications from refined front-end to structured back-end.',
     },
     sub: {
-      pt: 'Aliando desenvolvimento de software a infraestrutura sólida, suporte técnico ágil e emissão de nota fiscal para empresas.',
-      en: 'Pairing modern software development with solid infrastructure, agile technical support, and full fiscal compliance.',
+      pt: 'Sites ultrarrápidos que colocam sua empresa no topo do Google e suporte de TI completo para seu negócio nunca parar — da rede Wi-Fi e computadores de caixa à nuvem, com contrato e Nota Fiscal (NFS-e).',
+      en: 'Ultra-fast websites that rank your business on Google and end-to-end IT support so your operation never stops — from Wi-Fi and POS workstations to cloud infrastructure, with formal contracts and official invoices (NFS-e).',
     },
     cta: {
       projects: { pt: 'Ver projetos', en: 'View projects' },
@@ -168,62 +170,290 @@ export const content = {
   },
 
   services: {
-    label: { pt: 'Serviços & Atuação', en: 'Services & Solutions' },
+    label: { pt: 'Serviços & Soluções', en: 'Services & Solutions' },
     title: {
-      pt: 'O que entrego para o seu negócio crescer com estabilidade.',
-      en: 'What I deliver to help your business grow with stability.',
+      pt: 'Tecnologia que gera vendas na ponta e estabilidade na operação.',
+      en: 'Technology that drives sales and keeps your operation running.',
     },
     sub: {
-      pt: 'Soluções integradas de presença digital, engenharia web e suporte operacional.',
-      en: 'Integrated solutions covering digital presence, web engineering, and operational IT support.',
+      pt: 'Do site que atrai clientes todos os dias no Google ao suporte técnico que mantém computadores, redes e caixas funcionando sem interrupções.',
+      en: 'From high-converting websites ranking on Google to reliable IT support keeping workstations, networks, and POS systems running smoothly.',
+    },
+    nfsBadge: {
+      pt: 'Emitimos Nota Fiscal Eletrônica (NFS-e) · Contratos PJ & Atendimento Avulso',
+      en: 'Official Electronic Invoice (NFS-e) · B2B Contracts & On-Demand Support',
     },
     items: {
       pt: [
         {
           number: '01',
-          tag: 'Web & Presença Digital',
-          title: 'Desenvolvimento Web & Landing Pages',
+          tag: 'Presença Digital & Vendas',
+          title: 'Sites, Landing Pages & SEO Local',
           description:
-            'Criação de landing pages de alta conversão, sites institucionais e catálogos digitais com carregamento ultrarrápido (Astro e React), SEO Local avançado para o Google e integração direta com WhatsApp e formulários inteligentes.',
+            'Páginas ultrarrápidas projetadas para transformar visitantes e cliques de anúncios em orçamentos diretos no seu WhatsApp.',
+          deliverables: [
+            'Landing Pages de alta conversão para Google Ads e Meta Ads',
+            'Sites institucionais modernos para clínicas, escritórios e empresas',
+            'SEO Local e configuração técnica para topo do Google Maps',
+            'Sistemas web sob medida, painéis e integrações de API',
+          ],
+          ctaLabel: 'Solicitar orçamento de site',
+          whatsappLink:
+            'https://wa.me/5524992663842?text=Ol%C3%A1%2C%20V%C3%ADctor!%20Vim%20pelo%20site%20da%20VD%20Tech%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20Site%20ou%20Landing%20Page.',
         },
         {
           number: '02',
-          tag: 'Cloud & Domínios',
-          title: 'Infraestrutura Digital, DNS & E-mails',
+          tag: 'TI Presencial & Remoto',
+          title: 'Suporte Técnico, Estações & PDV',
           description:
-            'Configuração completa de presença digital: registro de domínios, apontamento de DNS, e-mails corporativos (Google Workspace), certificados de segurança SSL (HTTPS) e esteiras de hospedagem em nuvem (Vercel e Cloudflare).',
+            'Manutenção rápida e segura para lojas, consultórios e escritórios em Petrópolis e região não perderem vendas por computador parado.',
+          deliverables: [
+            'Formatação limpa com backup e preservação total de arquivos',
+            'Upgrades de performance (SSD NVMe e memória RAM) e limpeza física',
+            'Configuração de impressoras em rede, scanners e sistemas de caixa/PDV',
+            'Remoção de vírus/malwares e rotinas automáticas de backup em nuvem/local',
+          ],
+          ctaLabel: 'Solicitar suporte técnico',
+          whatsappLink:
+            'https://wa.me/5524992663842?text=Ol%C3%A1%2C%20V%C3%ADctor!%20Preciso%20de%20suporte%20t%C3%A9cnico%20para%20computadores%20ou%20sistema%20da%20minha%20empresa.',
         },
         {
           number: '03',
-          tag: 'TI Corporativo & Redes',
-          title: 'Suporte Técnico & Gestão Preventiva',
+          tag: 'Redes & Cloud B2B',
+          title: 'Redes Wi-Fi, Cabeamento & E-mail Corporativo',
           description:
-            'Planos mensais e atendimentos pontuais para comércios e escritórios: manutenção preventiva e corretiva de computadores, estabilização de redes cabeadas e Wi-Fi, proteção contra vírus, rotinas de backup e atendimento remoto e presencial em Petrópolis e região.',
+            'Conectividade estável sem quedas de sinal e infraestrutura digital profissional configurada de ponta a ponta.',
+          deliverables: [
+            'Wi-Fi corporativo de alta estabilidade e fim dos "pontos cegos" de sinal',
+            'Organização de cabeamento estruturado, switches e roteadores',
+            'E-mails profissionais (@suaempresa.com.br) via Google Workspace',
+            'Gestão de domínios, DNS, certificados SSL e hospedagem em nuvem',
+          ],
+          ctaLabel: 'Avaliar minha rede / infra',
+          whatsappLink:
+            'https://wa.me/5524992663842?text=Ol%C3%A1%2C%20V%C3%ADctor!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20rede%20Wi-Fi%2C%20cabeamento%20ou%20e-mail%20corporativo.',
         },
       ],
       en: [
         {
           number: '01',
-          tag: 'Web & Digital Presence',
-          title: 'Web Development & Landing Pages',
+          tag: 'Digital Presence & Sales',
+          title: 'Websites, Landing Pages & Local SEO',
           description:
-            'High-converting landing pages, corporate websites, and digital product catalogs built with blazing-fast frameworks (Astro & React), advanced Local SEO, and direct WhatsApp lead capture.',
+            'Ultra-fast pages engineered to turn visitors and ad clicks into qualified leads straight on your WhatsApp.',
+          deliverables: [
+            'High-converting Landing Pages for Google Ads & Meta Ads',
+            'Modern corporate websites for clinics, law firms, and businesses',
+            'Local SEO and Google Business Profile optimization for top rankings',
+            'Custom web applications, dashboards, and API integrations',
+          ],
+          ctaLabel: 'Request website quote',
+          whatsappLink:
+            'https://wa.me/5524992663842?text=Hello%20V%C3%ADctor!%20I%20would%20like%20a%20quote%20for%20a%20Website%20or%20Landing%20Page.',
         },
         {
           number: '02',
-          tag: 'Cloud & Domains',
-          title: 'Digital Infrastructure, DNS & Workspaces',
+          tag: 'On-Site & Remote IT',
+          title: 'IT Support, Workstations & POS',
           description:
-            'End-to-end digital foundation: domain registration, DNS management, Google Workspace setup, SSL security certificates (HTTPS), and automated cloud hosting (Vercel & Cloudflare).',
+            'Fast, reliable maintenance for shops, clinics, and offices so your business never loses sales to downtime.',
+          deliverables: [
+            'Clean OS formatting with full data backup and preservation',
+            'Hardware upgrades (SSD & RAM) and preventive thermal maintenance',
+            'Network printers, scanners, and Point-of-Sale (POS) workstation setup',
+            'Malware removal and automated cloud/local backup routines',
+          ],
+          ctaLabel: 'Request IT support',
+          whatsappLink:
+            'https://wa.me/5524992663842?text=Hello%20V%C3%ADctor!%20I%20need%20technical%20IT%20support%20for%20my%20business.',
         },
         {
           number: '03',
-          tag: 'Corporate IT & Networking',
-          title: 'IT Support & Preventive Management',
+          tag: 'Networking & B2B Cloud',
+          title: 'Business Wi-Fi, Cabling & Workspaces',
           description:
-            'Monthly support agreements and on-demand technical services for regional businesses: hardware maintenance, LAN/Wi-Fi network stabilization, malware removal, backup routines, and fast remote/on-site triage.',
+            'Rock-solid connectivity without dead zones and professional cloud infrastructure configured end to end.',
+          deliverables: [
+            'High-density corporate Wi-Fi and dead-zone elimination',
+            'Structured cabling organization, routers, and switches setup',
+            'Professional business email (@yourcompany.com) via Google Workspace',
+            'Domain registration, DNS management, SSL security, and cloud hosting',
+          ],
+          ctaLabel: 'Evaluate my network / infra',
+          whatsappLink:
+            'https://wa.me/5524992663842?text=Hello%20V%C3%ADctor!%20I%20would%20like%20a%20quote%20for%20networking%2C%20Wi-Fi%2C%20or%20cloud%20setup.',
         },
       ],
+    },
+    plans: {
+      title: {
+        pt: 'Modalidades de Atendimento',
+        en: 'Service Models',
+      },
+      sub: {
+        pt: 'Escolha o formato ideal para o momento da sua empresa — do chamado pontual ao acompanhamento contínuo.',
+        en: 'Choose the right format for your business — from on-demand calls to ongoing preventive management.',
+      },
+      items: {
+        pt: [
+          {
+            badge: 'Pontual / Emergencial',
+            name: 'Chamado Técnico Avulso',
+            priceHint: 'Por intervenção / máquina',
+            description:
+              'Para resolver urgências sem mensalidade: computador lento, formatação, impressora fora da rede ou falha no Wi-Fi.',
+            features: [
+              'Diagnóstico rápido presencial (Petrópolis) ou remoto',
+              'Orçamento prévio aprovado antes da execução',
+              'Garantia técnica do serviço prestado',
+              'Emissão de Nota Fiscal (NFS-e)',
+            ],
+            featured: false,
+            cta: 'Abrir chamado avulso',
+            whatsappLink:
+              'https://wa.me/5524992663842?text=Ol%C3%A1%2C%20V%C3%ADctor!%20Preciso%20de%20um%20atendimento%20t%C3%A9cnico%20avulso%20para%20minha%20empresa.',
+          },
+          {
+            badge: 'Mais escolhido por empresas',
+            name: 'Contrato Mensal de TI',
+            priceHint: 'Planos mensais fixos para PJ',
+            description:
+              'Seu departamento de TI terceirizado com custo previsível. Prevenção de falhas, backups monitorados e prioridade no suporte.',
+            features: [
+              'Atendimento prioritário remoto e presencial com SLA',
+              'Manutenção preventiva periódica das estações e rede',
+              'Monitoramento de backups e segurança (antivírus/LGPD)',
+              'Contrato formal e NFS-e mensal para contabilidade',
+            ],
+            featured: true,
+            cta: 'Consultar plano mensal',
+            whatsappLink:
+              'https://wa.me/5524992663842?text=Ol%C3%A1%2C%20V%C3%ADctor!%20Tenho%20interesse%20no%20Contrato%20Mensal%20de%20Suporte%20de%20TI%20para%20minha%20empresa.',
+          },
+          {
+            badge: 'Escopo Fechado',
+            name: 'Projetos Web & Sites',
+            priceHint: 'Entrega chave na mão',
+            description:
+              'Desenvolvimento completo da sua Landing Page ou site institucional com alta performance (95+ PageSpeed) e foco em vendas.',
+            features: [
+              'Design exclusivo e responsivo (mobile-first)',
+              'Integração com WhatsApp, formulários e Google Maps',
+              'Configuração completa de domínio, DNS e HTTPS',
+              'Entrega com treinamento, garantia e Nota Fiscal',
+            ],
+            featured: false,
+            cta: 'Orçar projeto web',
+            whatsappLink:
+              'https://wa.me/5524992663842?text=Ol%C3%A1%2C%20V%C3%ADctor!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20desenvolver%20um%20Site%20ou%20Landing%20Page.',
+          },
+        ],
+        en: [
+          {
+            badge: 'On-Demand / Urgent',
+            name: 'Single Tech Call',
+            priceHint: 'Per workstation / intervention',
+            description:
+              'Resolve urgent issues with no monthly fee: slow PCs, OS formatting, network printer issues, or Wi-Fi drops.',
+            features: [
+              'Fast on-site (Petrópolis) or remote diagnostics',
+              'Upfront transparent quote before any work',
+              'Service warranty included',
+              'Official Invoice (NFS-e) issued',
+            ],
+            featured: false,
+            cta: 'Request single call',
+            whatsappLink:
+              'https://wa.me/5524992663842?text=Hello%20V%C3%ADctor!%20I%20need%20an%20on-demand%20IT%20support%20call.',
+          },
+          {
+            badge: 'Most popular for SMEs',
+            name: 'Monthly IT Retainer',
+            priceHint: 'Fixed monthly B2B plans',
+            description:
+              'Your outsourced IT department at a predictable cost. Preventive maintenance, monitored backups, and priority SLA.',
+            features: [
+              'Priority remote and on-site support with SLA',
+              'Scheduled preventive maintenance for PCs & LAN',
+              'Monitored backups and endpoint security (LGPD)',
+              'Formal B2B contract and monthly invoice (NFS-e)',
+            ],
+            featured: true,
+            cta: 'Check monthly plan',
+            whatsappLink:
+              'https://wa.me/5524992663842?text=Hello%20V%C3%ADctor!%20I%20am%20interested%20in%20a%20Monthly%20IT%20Support%20plan%20for%20my%20company.',
+          },
+          {
+            badge: 'Fixed Scope',
+            name: 'Web Projects & Sites',
+            priceHint: 'Turnkey delivery',
+            description:
+              'End-to-end development of your high-converting Landing Page or corporate site with 95+ PageSpeed scores.',
+            features: [
+              'Bespoke mobile-first responsive design',
+              'Direct WhatsApp, lead forms & Google Maps setup',
+              'Complete domain, DNS, and SSL configuration',
+              'Handover with warranty and official invoice',
+            ],
+            featured: false,
+            cta: 'Quote web project',
+            whatsappLink:
+              'https://wa.me/5524992663842?text=Hello%20V%C3%ADctor!%20I%20would%20like%20to%20quote%20a%20Website%20or%20Landing%20Page%20project.',
+          },
+        ],
+      },
+    },
+    process: {
+      title: {
+        pt: 'Como funciona a contratação',
+        en: 'How we work together',
+      },
+      steps: {
+        pt: [
+          {
+            step: '01',
+            title: 'Diagnóstico Rápido',
+            body: 'Você chama no WhatsApp, explica a necessidade (suporte, rede ou site) e fazemos uma triagem ágil sem compromisso.',
+          },
+          {
+            step: '02',
+            title: 'Orçamento Transparente',
+            body: 'Receba uma proposta clara com escopo, prazo de entrega e valor fechado — sem surpresas ou custos ocultos.',
+          },
+          {
+            step: '03',
+            title: 'Execução Técnica Ágil',
+            body: 'Atendimento presencial/remoto ou desenvolvimento do projeto seguindo padrões rigorosos de performance e segurança.',
+          },
+          {
+            step: '04',
+            title: 'Garantia & Nota Fiscal',
+            body: 'Entrega validada, emissão da Nota Fiscal Eletrônica (NFS-e) e acompanhamento pós-serviço.',
+          },
+        ],
+        en: [
+          {
+            step: '01',
+            title: 'Fast Diagnostics',
+            body: 'Reach out on WhatsApp, describe your need (IT support, network, or website), and get a quick assessment.',
+          },
+          {
+            step: '02',
+            title: 'Transparent Quote',
+            body: 'Receive a clear proposal with defined scope, timeline, and fixed pricing — zero hidden fees.',
+          },
+          {
+            step: '03',
+            title: 'Agile Execution',
+            body: 'On-site/remote intervention or web development following strict performance and security standards.',
+          },
+          {
+            step: '04',
+            title: 'Warranty & Invoice',
+            body: 'Validated delivery, official electronic invoice (NFS-e), and post-service support.',
+          },
+        ],
+      },
     },
   },
 

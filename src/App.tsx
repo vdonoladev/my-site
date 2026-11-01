@@ -3,11 +3,13 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Hero } from '@/components/sections/Hero';
 import { About } from '@/components/sections/About';
+import { Services } from '@/components/sections/Services';
 import { Stack } from '@/components/sections/Stack';
 import { Projects } from '@/components/sections/Projects';
 import { Experience } from '@/components/sections/Experience';
 import { Contact } from '@/components/sections/Contact';
 import { Loading } from '@/components/ui/Loading';
+import { WhatsAppFloat } from '@/components/ui/WhatsAppFloat';
 import { useLanguage } from '@/hooks/useLanguage';
 import { content } from '@/data/content';
 
@@ -48,12 +50,14 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Services />
         <Stack />
         <Projects />
         <Experience />
         <Contact />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 }

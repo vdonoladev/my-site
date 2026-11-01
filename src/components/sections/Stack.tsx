@@ -40,7 +40,7 @@ export function Stack() {
     <section id="stack" className="relative scroll-mt-24 py-24 sm:py-32">
       <div className="container-edge">
         <Reveal>
-          <SectionLabel number="02" label={t.label[lang]} />
+          <SectionLabel number="03" label={t.label[lang]} />
         </Reveal>
 
         <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-12">

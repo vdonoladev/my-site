@@ -27,7 +27,7 @@ export function Contact() {
 
       <div className="container-edge relative">
         <Reveal>
-          <SectionLabel number="05" label={t.label[lang]} />
+          <SectionLabel number="06" label={t.label[lang]} />
         </Reveal>
 
         <Reveal direction="up" className="mt-8">

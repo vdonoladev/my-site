@@ -13,7 +13,7 @@ export function Projects() {
     <section id="projects" className="relative scroll-mt-24 py-24 sm:py-32">
       <div className="container-edge">
         <Reveal>
-          <SectionLabel number="03" label={t.label[lang]} />
+          <SectionLabel number="04" label={t.label[lang]} />
         </Reveal>
 
         <div className="mt-8">

@@ -1,5 +1,6 @@
 import { Fragment, useEffect, useState } from 'react';
-import { ArrowDownRight, Download, Mail } from 'lucide-react';
+import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
+import { SiWhatsapp } from 'react-icons/si';
 import { motion, useReducedMotion } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/cn';
@@ -91,20 +92,38 @@ export function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.6 }}
-            className="flex flex-wrap items-center gap-2.5 pt-1"
+            className="flex flex-col gap-4 pt-1"
           >
-            <Button as="a" href="#projects" size="lg">
-              {t.cta.projects[lang]}
-              <ArrowDownRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
-            </Button>
-            <Button as="a" href="#contact" variant="secondary" size="lg">
-              <Mail size={15} />
-              {t.cta.contact[lang]}
-            </Button>
-            <Button as="a" href={links.cv} download variant="ghost" size="lg">
-              <Download size={15} />
-              {t.cta.cv[lang]}
-            </Button>
+            <div className="flex flex-wrap items-center gap-2.5">
+              <Button as="a" href={links.whatsapp} target="_blank" rel="noreferrer" size="lg">
+                <SiWhatsapp size={15} />
+                {lang === 'pt' ? 'Solicitar orçamento' : 'Request a quote'}
+                <ArrowUpRight size={15} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </Button>
+              <Button as="a" href="#services" variant="secondary" size="lg">
+                {t.cta.services[lang]}
+                <ArrowDownRight size={15} className="transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
+              </Button>
+              <Button as="a" href="#projects" variant="ghost" size="lg">
+                {t.cta.projects[lang]}
+              </Button>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[11px] text-muted-foreground">
+              <span className="text-accent">
+                {lang === 'pt' ? '✓ NFS-e para Empresas' : '✓ Official Invoice (NFS-e)'}
+              </span>
+              <span>·</span>
+              <span>
+                {lang === 'pt'
+                  ? '✓ Petrópolis (Presencial) & Brasil (Remoto)'
+                  : '✓ On-Site (Petrópolis) & Remote'}
+              </span>
+              <span>·</span>
+              <a href={links.cv} download className="underline underline-offset-4 hover:text-foreground">
+                {t.cta.cv[lang]}
+              </a>
+            </div>
           </motion.div>
         </div>
 
