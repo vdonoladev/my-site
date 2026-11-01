@@ -48,7 +48,7 @@ export function Hero() {
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-10 bg-border-strong" />
               <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-                ReactJS · NodeJS · Astro · Docker · PostgreSQL
+                React · Astro · Node.js · Docker · Redes & TI
               </span>
             </div>
 
@@ -237,13 +237,13 @@ type TokenKind = 'keyword' | 'fn' | 'prop' | 'string' | 'boolean' | 'type' | 'pl
 
 const palette: Record<TokenKind, string> = {
   keyword: 'text-fuchsia-500/90 dark:text-fuchsia-300/90',
-  fn:      'text-sky-600 dark:text-sky-300',
-  prop:    'text-foreground',
-  string:  'text-emerald-600 dark:text-emerald-300/90',
+  fn: 'text-sky-600 dark:text-sky-300',
+  prop: 'text-foreground',
+  string: 'text-emerald-600 dark:text-emerald-300/90',
   boolean: 'text-amber-600 dark:text-amber-300',
-  type:    'text-violet-500 dark:text-violet-300',
-  plain:   'text-foreground/70',
-  ws:      '',
+  type: 'text-violet-500 dark:text-violet-300',
+  plain: 'text-foreground/70',
+  ws: '',
 };
 
 type Token = { kind: TokenKind; text: string };
@@ -251,102 +251,134 @@ type CodeLine = { gutter: string; tokens: Token[] };
 
 // Cada entrada é uma linha visível no editor simulado.
 const codeLines: ReadonlyArray<CodeLine> = [
-  { gutter: '01', tokens: [
-    { kind: 'keyword', text: 'export const ' },
-    { kind: 'fn',      text: 'developer' },
-    { kind: 'plain',   text: ' = {' },
-  ]},
-  { gutter: '02', tokens: [
-    { kind: 'ws',      text: '  ' },
-    { kind: 'prop',    text: 'name' },
-    { kind: 'plain',   text: ': ' },
-    { kind: 'string',  text: '"Victor Donola Ferreira"' },
-    { kind: 'plain',   text: ',' },
-  ]},
-  { gutter: '03', tokens: [
-    { kind: 'ws',      text: '  ' },
-    { kind: 'prop',    text: 'company' },
-    { kind: 'plain',   text: ': ' },
-    { kind: 'string',  text: '"VD Tech & Suporte"' },
-    { kind: 'plain',   text: ',' },
-  ]},
-  { gutter: '04', tokens: [
-    { kind: 'ws',      text: '  ' },
-    { kind: 'prop',    text: 'cnpj' },
-    { kind: 'plain',   text: ': ' },
-    { kind: 'string',  text: '"69.676.193/0001-00"' },
-    { kind: 'plain',   text: ',' },
-  ]},
-  { gutter: '05', tokens: [
-    { kind: 'ws',      text: '  ' },
-    { kind: 'prop',    text: 'role' },
-    { kind: 'plain',   text: ': ' },
-    { kind: 'string',  text: '"Full-Stack & IT Solutions"' },
-    { kind: 'plain',   text: ',' },
-  ]},
-  { gutter: '06', tokens: [
-    { kind: 'ws',      text: '  ' },
-    { kind: 'prop',    text: 'focus' },
-    { kind: 'plain',   text: ': [' },
-  ]},
-  { gutter: '07', tokens: [
-    { kind: 'ws',      text: '    ' },
-    { kind: 'string',  text: '"clean code"' },
-    { kind: 'plain',   text: ',' },
-  ]},
-  { gutter: '08', tokens: [
-    { kind: 'ws',      text: '    ' },
-    { kind: 'string',  text: '"refined UI"' },
-    { kind: 'plain',   text: ',' },
-  ]},
-  { gutter: '09', tokens: [
-    { kind: 'ws',      text: '    ' },
-    { kind: 'string',  text: '"product mindset"' },
-    { kind: 'plain',   text: ',' },
-  ]},
-  { gutter: '10', tokens: [
-    { kind: 'ws',      text: '    ' },
-    { kind: 'string',  text: '"infra & IT"' },
-    { kind: 'plain',   text: ',' },
-  ]},
-  { gutter: '11', tokens: [
-    { kind: 'ws',      text: '  ' },
-    { kind: 'plain',   text: '],' },
-  ]},
-  { gutter: '12', tokens: [
-    { kind: 'ws',      text: '  ' },
-    { kind: 'prop',    text: 'stack' },
-    { kind: 'plain',   text: ': ' },
-    { kind: 'keyword', text: 'new' },
-    { kind: 'plain',   text: ' ' },
-    { kind: 'fn',      text: 'Set' },
-    { kind: 'plain',   text: '([' },
-    { kind: 'string',  text: '"ReactJS"' },
-    { kind: 'plain',   text: ', ' },
-    { kind: 'string',  text: '"NodeJS"' },
-    { kind: 'plain',   text: ', ' },
-    { kind: 'string',  text: '"Astro"' },
-    { kind: 'plain',   text: ',' },
-  ]},
-  { gutter: '', tokens: [
-    { kind: 'ws',      text: '    ' },
-    { kind: 'string',  text: '"Docker"' },
-    { kind: 'plain',   text: ', ' },
-    { kind: 'string',  text: '"PostgreSQL"' },
-    { kind: 'plain',   text: ']),' },
-  ]},
-  { gutter: '13', tokens: [
-    { kind: 'ws',      text: '  ' },
-    { kind: 'prop',    text: 'available' },
-    { kind: 'plain',   text: ': ' },
-    { kind: 'boolean', text: 'true' },
-    { kind: 'plain',   text: ',' },
-  ]},
-  { gutter: '14', tokens: [
-    { kind: 'plain',   text: '} as ' },
-    { kind: 'type',    text: 'const' },
-    { kind: 'plain',   text: ';' },
-  ]},
+  {
+    gutter: '01', tokens: [
+      { kind: 'keyword', text: 'export const ' },
+      { kind: 'fn', text: 'developer' },
+      { kind: 'plain', text: ' = {' },
+    ]
+  },
+  {
+    gutter: '02', tokens: [
+      { kind: 'ws', text: '  ' },
+      { kind: 'prop', text: 'name' },
+      { kind: 'plain', text: ': ' },
+      { kind: 'string', text: '"Víctor Donola Ferreira"' },
+      { kind: 'plain', text: ',' },
+    ]
+  },
+  {
+    gutter: '03', tokens: [
+      { kind: 'ws', text: '  ' },
+      { kind: 'prop', text: 'company' },
+      { kind: 'plain', text: ': ' },
+      { kind: 'string', text: '"VD Tech & Suporte"' },
+      { kind: 'plain', text: ',' },
+    ]
+  },
+  {
+    gutter: '04', tokens: [
+      { kind: 'ws', text: '  ' },
+      { kind: 'prop', text: 'cnpj' },
+      { kind: 'plain', text: ': ' },
+      { kind: 'string', text: '"69.676.193/0001-00"' },
+      { kind: 'plain', text: ',' },
+    ]
+  },
+  {
+    gutter: '05', tokens: [
+      { kind: 'ws', text: '  ' },
+      { kind: 'prop', text: 'role' },
+      { kind: 'plain', text: ': ' },
+      { kind: 'string', text: '"Full-Stack & IT Solutions"' },
+      { kind: 'plain', text: ',' },
+    ]
+  },
+  {
+    gutter: '06', tokens: [
+      { kind: 'ws', text: '  ' },
+      { kind: 'prop', text: 'focus' },
+      { kind: 'plain', text: ': [' },
+    ]
+  },
+  {
+    gutter: '07', tokens: [
+      { kind: 'ws', text: '    ' },
+      { kind: 'string', text: '"clean code"' },
+      { kind: 'plain', text: ',' },
+    ]
+  },
+  {
+    gutter: '08', tokens: [
+      { kind: 'ws', text: '    ' },
+      { kind: 'string', text: '"refined UI"' },
+      { kind: 'plain', text: ',' },
+    ]
+  },
+  {
+    gutter: '09', tokens: [
+      { kind: 'ws', text: '    ' },
+      { kind: 'string', text: '"product mindset"' },
+      { kind: 'plain', text: ',' },
+    ]
+  },
+  {
+    gutter: '10', tokens: [
+      { kind: 'ws', text: '    ' },
+      { kind: 'string', text: '"infra & IT"' },
+      { kind: 'plain', text: ',' },
+    ]
+  },
+  {
+    gutter: '11', tokens: [
+      { kind: 'ws', text: '  ' },
+      { kind: 'plain', text: '],' },
+    ]
+  },
+  {
+    gutter: '12', tokens: [
+      { kind: 'ws', text: '  ' },
+      { kind: 'prop', text: 'stack' },
+      { kind: 'plain', text: ': ' },
+      { kind: 'keyword', text: 'new' },
+      { kind: 'plain', text: ' ' },
+      { kind: 'fn', text: 'Set' },
+      { kind: 'plain', text: '([' },
+      { kind: 'string', text: '"ReactJS"' },
+      { kind: 'plain', text: ', ' },
+      { kind: 'string', text: '"NodeJS"' },
+      { kind: 'plain', text: ', ' },
+      { kind: 'string', text: '"Astro"' },
+      { kind: 'plain', text: ',' },
+    ]
+  },
+  {
+    gutter: '', tokens: [
+      { kind: 'ws', text: '    ' },
+      { kind: 'string', text: '"Docker"' },
+      { kind: 'plain', text: ', ' },
+      { kind: 'string', text: '"PostgreSQL"' },
+      { kind: 'plain', text: ', ' },
+      { kind: 'string', text: '"Redes & Wi-Fi"' },
+      { kind: 'plain', text: ']),' },
+    ]
+  },
+  {
+    gutter: '13', tokens: [
+      { kind: 'ws', text: '  ' },
+      { kind: 'prop', text: 'available' },
+      { kind: 'plain', text: ': ' },
+      { kind: 'boolean', text: 'true' },
+      { kind: 'plain', text: ',' },
+    ]
+  },
+  {
+    gutter: '14', tokens: [
+      { kind: 'plain', text: '} as ' },
+      { kind: 'type', text: 'const' },
+      { kind: 'plain', text: ';' },
+    ]
+  },
   // Linha final vazia para repouso do cursor piscante após terminar de digitar.
   { gutter: '15', tokens: [] },
 ];

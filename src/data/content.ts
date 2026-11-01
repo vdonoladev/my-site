@@ -5,25 +5,48 @@
 
 export type Language = 'pt' | 'en';
 
+export const developer = {
+  name: 'Víctor Donola Ferreira',
+  company: 'VD Tech & Suporte',
+  cnpj: '69.676.193/0001-00',
+  role: 'Full-Stack & IT Solutions',
+  focus: [
+    'clean code',
+    'refined UI',
+    'product mindset',
+    'infra & IT',
+  ],
+  stack: new Set([
+    'ReactJS',
+    'NodeJS',
+    'Astro',
+    'Docker',
+    'PostgreSQL',
+    'Redes & Wi-Fi',
+  ]),
+  available: true,
+} as const;
+
 export const links = {
   github: 'https://github.com/vdonoladev',
   linkedin: 'https://www.linkedin.com/in/vdonoladev/',
   email: 'contato@vdonoladev.com.br',
   supportEmail: 'suporte@vdonoladev.com.br',
-  whatsapp: 'https://wa.me/5524992663842',
-  whatsappFormatted: '(24) 99266-3842',
+  whatsapp:
+    'https://wa.me/5524992663842?text=Ol%C3%A1%2C%20V%C3%ADctor!%20Vim%20pelo%20site%20da%20VD%20Tech%20e%20gostaria%20de%20um%20or%C3%A7amento.',
+  whatsappFormatted: '+55 (24) 99266-3842',
   cv: '/vdonoladev-cv.pdf',
   contactForm: 'https://formspree.io/f/mljeevqg',
 };
 
 export const companyInfo = {
   name: 'VD Tech & Suporte',
-  legalName: 'VD Tech & Suporte',
+  legalName: 'Víctor Donola Ferreira',
   cnpj: '69.676.193/0001-00',
   city: 'Petrópolis',
   state: 'RJ',
   country: 'Brasil',
-  location: 'Petrópolis - RJ · Atendimento presencial e remoto',
+  location: 'Petrópolis e Região Serrana - RJ',
   businessHours: {
     pt: 'Seg. a Sex. das 08h às 18h | Sáb. das 08h às 12h',
     en: 'Mon to Fri: 8am - 6pm | Sat: 8am - 12pm',
@@ -254,11 +277,10 @@ export const content = {
           company: 'VD Tech & Suporte',
           title: 'Fundador & Desenvolvedor Full-Stack / Soluções em TI',
           bullets: [
-            'Desenvolvimento de landing pages, plataformas institucionais e catálogos digitais de alta conversão para empresas e comércios locais.',
-            'Otimização técnica para SEO Local e Core Web Vitals, garantindo pontuações superiores a 95+ no PageSpeed e melhor posicionamento em buscas geolocalizadas e no Google Perfil de Empresa.',
-            'Consultoria e gestão de infraestrutura: implantação de domínios, DNS, Google Workspace corporativo, certificados SSL e pipelines de deploy contínuo via Vercel e Cloudflare.',
-            'Suporte de TI e manutenção preventiva para comércios e escritórios: montagem e estabilização de redes locais (cabeadas e Wi-Fi), salvaguarda de dados/backups e suporte ágil remoto e presencial.',
-            'Operação formalizada com contratos transparentes, conformidade com a LGPD e emissão de Nota Fiscal Eletrônica (NFS-e).',
+            'Desenvolvimento de landing pages e plataformas institucionais com pontuações 95+ no PageSpeed e ranqueamento no Google Maps.',
+            'Gestão de infraestrutura: implantação de domínios, DNS, Google Workspace corporativo, certificados SSL e pipelines de deploy contínuo via Vercel e Cloudflare.',
+            'Suporte de TI presencial e remoto para comércios e escritórios: redes locais (cabeadas e Wi-Fi), salvaguarda de dados/backups e manutenção preventiva.',
+            'Operação formal com emissão de NFS-e e conformidade LGPD.',
           ],
           highlight: {
             name: 'Ecossistema Web & Suporte Integrado',
@@ -388,14 +410,14 @@ export const content = {
       },
       whatsapp: {
         label: { pt: 'WhatsApp Comercial', en: 'Business WhatsApp' },
-        display: '(24) 99266-3842',
-        link: 'https://wa.me/5524992663842',
+        display: '+55 (24) 99266-3842',
+        link: 'https://wa.me/5524992663842?text=Ol%C3%A1%2C%20V%C3%ADctor!%20Vim%20pelo%20site%20da%20VD%20Tech%20e%20gostaria%20de%20um%20or%C3%A7amento.',
       },
       location: {
         label: { pt: 'Localização', en: 'Location' },
         value: {
-          pt: 'Petrópolis - RJ · Atendimento presencial e remoto',
-          en: 'Petrópolis, RJ (Brazil) · On-site & remote service',
+          pt: 'Petrópolis e Região Serrana - RJ',
+          en: 'Petrópolis & Mountain Region - RJ (Brazil)',
         },
       },
     },
@@ -486,8 +508,8 @@ export const content = {
     company: 'VD Tech & Suporte',
     cnpj: '69.676.193/0001-00',
     invoiceNotice: {
-      pt: 'Nota Fiscal de Serviços (NFS-e) emitida para todos os serviços.',
-      en: 'Official electronic invoices (NFS-e) issued for all services.',
+      pt: 'Emitimos Nota Fiscal Eletrônica (NFS-e)',
+      en: 'Official Invoice (NFS-e) Issued',
     },
     role: { pt: 'Desenvolvedor Full-Stack & Soluções em TI', en: 'Full-Stack Developer & IT Solutions' },
     rights: {
